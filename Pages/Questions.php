@@ -1,14 +1,15 @@
 <?php
+    require_once 'auth.php';
 
-    $_SESSION['name'] = $_POST['name'];
-    $_SESSION['email'] = $_POST['email'];
-    $_SESSION['branch'] = $_POST['branch'];
 
     //JSON Parsing
-    //$data = file_get_contents("../Database/Questions.json");
-    //$data = json_decode($data,true);
+    $data = file_get_contents("../Database/Questions.json");
+    $data = json_decode($data,true);
 
-    
+    //fetch user_info
+    ob_start();
+    $user_info = verifyCredentials($_SESSION['email'],$_SESSION['otp']);
+    ob_end_clean();
 ?>
 
 <!--jquery-->
@@ -112,7 +113,7 @@
     <!--Content-->
     <div class="card mx-5">
         <div class="card-header row">
-            <h3 class="col"><?php echo "Hi, ".$_SESSION['name'];?></h2>
+            <h3 class="col"><?php print $user_info['email']; ?></h2>
             <button type="button" id="startQuiz" onclick="startQuiz()" class="btn btn-dark col-1 mx-2">Start</button>
             <a class="btn btn-dark col-1" href="logout.php" role="button">Logout</a>
         </div>

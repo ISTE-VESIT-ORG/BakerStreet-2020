@@ -1,0 +1,13 @@
+{
+    "name": "adity/iste_quiz",
+    "authors": [
+        {
+            "name": "ADI-KOTKAR",
+            "email": "adityakotkar75@gmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.6",
+        "phpmailer/phpmailer": "^6.1"
+    }
+}
