@@ -2,6 +2,7 @@
 
 require '../vendor/autoload.php';  
 
+
 /*
             JSON Format for user:
                 {
@@ -18,34 +19,6 @@ require '../vendor/autoload.php';
                 }
         
 */
-
-if(isset($_POST['email'])){
-    $_SESSION['email'] = $_POST['email'];
-    //echo $_SESSION['email'];
-
-    $collection = connectDB();
-
-    $userCheck = verifyUser($_SESSION['email']);
-    if($userCheck == null){
-        //echo "User not found";
-        createUser($_SESSION['email']);
-        $_SESSION['user_info'] = fetchUser($_SESSION['email']);
-
-        header('location:Home.php');
-
-        return ;
-    }
-     
-    if($userCheck != null){
-        updateOTP($_SESSION['email']);
-        $_SESSION['user_info'] = fetchUser($_SESSION['email']);
-
-        header('location:Home.php');
-
-        return ;
-    }
-       
-}
 
 //Database Connection
 function connectDB(){
@@ -126,6 +99,66 @@ function updateOTP($email){
     mail($to_email,$subject,$message,$headers);
     echo "Mail sent";
 
+}
+
+
+//Used for verifying credentials and returning user document
+function verifyCredentials($email,$otp){
+    $collection = connectDB();
+    
+    $document = $collection->findOne([
+        'email' => $email,
+        'otp' => (int)$otp
+    ]);
+
+    var_dump($document);
+    return $document;
+}
+
+//Update Verification Status
+function updateVerificationStatus($email){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => ['verification' => 1]]
+    );
+}
+
+//Update start of Quiz
+function updateStartTime($email,$time_start){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => ['time_start' => $time_start]]
+    );
+}
+
+
+//Update Progress of user
+function updateProgress($email,$progress_count,$points,$time){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'progress_count' => (int)$progress_count, 
+            'points' => (int)$points, 
+            'time_end' => $time
+            ]
+        ]
+    );
+}
+
+//Update points for incorrect attempts
+function updatePointsForAttempts($email,$attempts,$points){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => ['incorrect_attempts' => ( (int)$attempts+1 ), 'points' => ( (int)$points-2 )]]
+    );
 }
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-    require_once 'auth.php';
+    require_once '../Backend/auth.php';
 
     //JSON Parsing
     $data = file_get_contents("../Database/Questions.json");
@@ -21,7 +21,7 @@
     }
 
     if($_SESSION['progress_count'] == 11){
-        header('location:End.php');
+        header('location: End.php');
     }
 ?>
 
@@ -50,7 +50,7 @@
             return false
         }
 
-        document.forms['questionForm'].action="points.php"
+        document.forms['questionForm'].action="../Backend/points.php"
     }
 
     function hintSelected(){
@@ -80,7 +80,7 @@
         <div class="card-body row">
             <h3 class="col"><?php print $user_info['email']; ?></h2>
             <!-- <button type="button" id="startQuiz" onclick="startQuiz()" class="btn btn-dark col-1 mx-2">Start</button> -->
-            <a class="btn btn-dark col-1" href="logout.php" role="button">Logout</a>
+            <a class="btn btn-dark col-1" href="../Backend/logout.php" role="button">Logout</a>
         </div>
     </div>
 
@@ -132,13 +132,7 @@
              </form>";
         
     ?>
-    <form action="">
         
             
-            
-            
-            
-         
-
 </body>
 </html>

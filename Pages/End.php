@@ -18,7 +18,7 @@
     <div class="card mx-5 mt-5">
         <div class="card-body">
             <h1>Congratulations</h1>
-            <a href="logout.php" type="button" class="btn btn-dark">End</a>
+            <a href="../Backend/logout.php" type="button" class="btn btn-dark">End</a>
         </div>
     </div>
 </body>

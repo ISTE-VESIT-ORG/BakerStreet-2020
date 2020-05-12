@@ -18,7 +18,7 @@
     <div class="card mx-5 mt-5">
         <div class="card-body">
             <h1>Introduction Here</h1>
-            <a href="timer.php" type="button" class="btn btn-dark">Start</a>
+            <a href="../Backend/timer.php" type="button" class="btn btn-dark">Start</a>
         </div>
     </div>
 </body>

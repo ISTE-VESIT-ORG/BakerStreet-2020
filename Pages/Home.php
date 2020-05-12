@@ -27,7 +27,7 @@ session_start();
       return false
     }
 
-    document.forms["LoginForm"].action="sendOTP.php"
+    document.forms["LoginForm"].action="../Backend/sendOTP.php"
     
   }
 
@@ -46,7 +46,7 @@ session_start();
       alert("Please enter your OTP sent to your mail")
       return false
     }
-    document.forms["LoginForm"].action="auth.php"
+    document.forms["LoginForm"].action="../Backend/auth.php"
 
   }
 </script>
