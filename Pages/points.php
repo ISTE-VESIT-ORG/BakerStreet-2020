@@ -24,15 +24,8 @@
             $_SESSION['points'] += 10;
 
             $current_time = time();
-            $time_used = $current_time - (int)$_SESSION['time_start'];
-
-            // echo "<br>";
-            // echo $_SESSION['progress_count'];
-            // echo "<br>";
-            // echo "Points: ".$_SESSION['points'];
-            // echo "<br>";
             
-            updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points'],$time_used);
+            updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points'],$current_time);
             header('location:timer.php');
 
         }else{
@@ -52,7 +45,7 @@
             ['$set' => [
                 'progress_count' => (int)$progress_count, 
                 'points' => (int)$points, 
-                'time' => ( (int)$_SESSION['time'] + $time )
+                'time_end' => $time
                 ]
             ]
         );
@@ -66,5 +59,7 @@
             ['$set' => ['incorrect_attempts' => ( (int)$attempts+1 ), 'points' => ( (int)$points-2 )]]
         );
     }
+
+    
 
 ?>

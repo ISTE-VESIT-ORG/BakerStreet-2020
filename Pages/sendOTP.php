@@ -5,14 +5,16 @@ require '../vendor/autoload.php';
 /*
             JSON Format for user:
                 {
-                    "_id" : "",
-                    "email" : "",
-                    "progress_count" : "",
-                    "points" : "",
-                    "hints_used" : "",
-                    "time" : "",
-                    "otp" : "",
-                    "verification" : ""
+                    '_id' : '',
+                    'email' : '',
+                    'progress_count' : '',
+                    'points' : '',
+                    'incorrect_attempts' : '',
+                    'hints_used' : '',
+                    'time_start' : '',
+                    'time_end' : '',
+                    'otp' : '',
+                    'verification' : ''
                 }
         
 */
@@ -78,7 +80,8 @@ function createUser($email){
         'points' => 10,
         'incorrect_attempts' => 0,
         'hints_used' => '',
-        'time' => 0,
+        'time_start' => '',
+        'time_end' => '',
         'otp' => (int)$otp,
         'verification' => 0
     ]);

@@ -74,12 +74,22 @@ function verifyCredentials($email,$otp){
     return $document;
 }
 
+//Update Verification Status
 function updateVerificationStatus($email){
     $collection = connectDB();
 
     $updateResult = $collection->updateOne(
         ['email' => $email],
         ['$set' => ['verification' => 1]]
+    );
+}
+
+function updateStartTime($email,$time_start){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => ['time_start' => $time_start]]
     );
 }
 

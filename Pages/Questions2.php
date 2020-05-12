@@ -12,8 +12,13 @@
 
     $_SESSION['progress_count'] = (int)$user_info['progress_count'];
     $_SESSION['points'] = (int)$user_info['points'];
-    $_SESSION['time'] = (int)$user_info['time'];
     $_SESSION['attempts'] = (int)$user_info['incorrect_attempts'];
+
+    if($_SESSION['progress_count'] == 0){
+        $time_start = time();
+
+        updateStartTime($_SESSION['email'],$time_start);
+    }
 
     if($_SESSION['progress_count'] == 11){
         header('location:End.php');
