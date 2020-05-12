@@ -23,14 +23,16 @@
             $_SESSION['progress_count']++;
             $_SESSION['points'] += 10;
 
-            
+            $current_time = time();
+            $time_used = $current_time - (int)$_SESSION['time_start'];
+
             // echo "<br>";
             // echo $_SESSION['progress_count'];
             // echo "<br>";
             // echo "Points: ".$_SESSION['points'];
             // echo "<br>";
             
-            updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points']);
+            updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points'],$time_used);
             header('location:timer.php');
 
         }else{
@@ -42,12 +44,17 @@
         }
     }
 
-    function updateProgress($email,$progress_count,$points){
+    function updateProgress($email,$progress_count,$points,$time){
         $collection = connectDB();
 
         $updateResult = $collection->updateOne(
             ['email' => $email],
-            ['$set' => ['progress_count' => (int)$progress_count, 'points' => (int)$points]]
+            ['$set' => [
+                'progress_count' => (int)$progress_count, 
+                'points' => (int)$points, 
+                'time' => ( (int)$_SESSION['time'] + $time )
+                ]
+            ]
         );
     }
 
