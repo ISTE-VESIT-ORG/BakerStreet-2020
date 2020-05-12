@@ -75,9 +75,10 @@ function createUser($email){
     $document = $insertOneResult = $collection->insertOne([
         'email' => $email,
         'progress_count' => 0,
-        'points' => '',
+        'points' => 10,
+        'incorrect_attempts' => 0,
         'hints_used' => '',
-        'time' => '',
+        'time' => 0,
         'otp' => (int)$otp,
         'verification' => 0
     ]);

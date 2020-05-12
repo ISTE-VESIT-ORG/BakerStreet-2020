@@ -16,10 +16,6 @@
         $correct_answer = trim(strtoupper($data[$question_no]['answer']));
         $input = trim(strtoupper($_POST['answer']));
 
-        echo "Input: ".$input;
-        echo "<br>";
-        echo "Answer: ".$correct_answer;
-        echo "<br>";
 
         //Regex Match
         if(preg_match('/'.$correct_answer.'/',$input)){
@@ -34,15 +30,15 @@
             // echo "Points: ".$_SESSION['points'];
             // echo "<br>";
             
-            //updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points']);
-            //header('location:Questions2.php');
+            updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points']);
+            header('location:timer.php');
 
         }else{
             echo "not matched";
 
             $_SESSION['wrongAnswer'] = "true";
-
-            //header('location:Questions2.php');
+            updatePointsForAttempts($_SESSION['email'],$_SESSION['attempts'],$_SESSION['points']);
+            header('location:Questions2.php');
         }
     }
 
@@ -52,6 +48,15 @@
         $updateResult = $collection->updateOne(
             ['email' => $email],
             ['$set' => ['progress_count' => (int)$progress_count, 'points' => (int)$points]]
+        );
+    }
+
+    function updatePointsForAttempts($email,$attempts,$points){
+        $collection = connectDB();
+
+        $updateResult = $collection->updateOne(
+            ['email' => $email],
+            ['$set' => ['incorrect_attempts' => ( (int)$attempts+1 ), 'points' => ( (int)$points-2 )]]
         );
     }
 

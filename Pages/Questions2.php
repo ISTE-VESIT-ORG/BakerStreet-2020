@@ -12,6 +12,8 @@
 
     $_SESSION['progress_count'] = (int)$user_info['progress_count'];
     $_SESSION['points'] = (int)$user_info['points'];
+    $_SESSION['time'] = (int)$user_info['time'];
+    $_SESSION['attempts'] = (int)$user_info['incorrect_attempts'];
 
     if($_SESSION['progress_count'] == 11){
         header('location:End.php');
@@ -50,7 +52,7 @@
 
         setTimeout(() => {
             document.getElementById("hint").disabled = true
-        }, 1000);
+        }, 100);
 
         //alert("Points will be deducted if you choose for hint! ")  
         
@@ -105,7 +107,7 @@
                     
         print"           <p>
                         <button class=\"btn btn-primary mx-5\" type=\"button\" data-toggle=\"collapse\"
-                                data-target=\"#collapseExample\" aria-expanded=\"false\"
+                                data-target=\"#collapseExample\" aria-expanded=\"false\" 
                                 aria-controls=\"collapseExample\" id=\"hint\" onclick=\"hintSelected()\">
                             Hint
                         </button>

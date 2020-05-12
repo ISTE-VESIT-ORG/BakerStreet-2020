@@ -12,13 +12,13 @@
 </head>
 <body>
     <!--Header-->
-    <?php include '../Components/header.php'?>
+    <?php include '../Components/header.php'; ?>
 
     <!--Content-->
     <div class="card mx-5 mt-5">
         <div class="card-body">
             <h1>Introduction Here</h1>
-            <a href="Questions2.php" type="button" class="btn btn-dark">Start</a>
+            <a href="timer.php" type="button" class="btn btn-dark">Start</a>
         </div>
     </div>
 </body>
