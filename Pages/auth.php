@@ -42,7 +42,7 @@ if(isset($_POST['email']) && isset($_POST['otp'])){
         //print_r($verifyCredentials['email']);
         updateVerificationStatus($_SESSION['email']);
         
-        header('location:Questions.php');
+        header('location:Rules.php');
 
         return ;
 

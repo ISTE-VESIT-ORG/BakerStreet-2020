@@ -86,6 +86,12 @@
             document.getElementById(hint_id).disabled = true
         }, 1000);
     }
+
+    function submitForm(){
+        nextQuestion();
+        alert("Question "+count+" submitted")
+    }
+
 </script>
 
  <!--Handling Reloading of Page-->   
@@ -124,6 +130,8 @@
     <div class="accordion my-3" id="accordionExample">
     <?php
         for($i=0; $i<count($data); $i++){
+            $form_name = "questionForm".$i;
+
             $button_id = "questionButton".$i;
 
             $input_id = "answer".$i;
@@ -140,45 +148,47 @@
             $hint_collapse = "hintCollapse".$i;
             $hint_collpaseTarget = "#hintCollapse".$i;
 
-            print " <div class=\"card mx-5 \">
-                        <div class=\"card-header\" id=\"$heading\">
-                            <h2 class=\"mb-0\">
-                                <button class=\"btn btn-link collapsed\" type=\"button\" id=\"$button_id\"
-                                        data-toggle=\"collapse\" data-target=\"$collapseTarget\" 
-                                        aria-expanded=\"false\" aria-controls=\"$collapse\" disabled>
-                                    Question ".($i+1)."
-                                </button>
-                            </h2>
-                        </div>
-                        <div id=\"$collapse\" class=\"collapse\" aria-labelledby=\"$heading\" 
-                            data-parent=\"#accordionExample\">
-                            <div class=\"card-body mx-4\">
-                                ".$data[$i]['question']."
+            print "<form name=\"$form_name\" method=\"POST\" onsubmit=\"return submitForm()\"> 
+                        <div class=\"card mx-5 \">
+                            <div class=\"card-header\" id=\"$heading\">
+                                <h2 class=\"mb-0\">
+                                    <button class=\"btn btn-link collapsed\" type=\"button\" id=\"$button_id\"
+                                            data-toggle=\"collapse\" data-target=\"$collapseTarget\" 
+                                            aria-expanded=\"false\" aria-controls=\"$collapse\" disabled>
+                                        Question ".($i+1)."
+                                    </button>
+                                </h2>
                             </div>
-                            <div class=\"input-group mb-3 mx-5 w-50\">
-                                <input type=\"text\" class=\"form-control\" placeholder=\"Answer\" 
-                                        aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
-                                        name=\"$input_id\" id=\"$input_id\">
-                            </div>
-                            <p>
-                                <button class=\"btn btn-primary mx-5\" type=\"button\" 
-                                        data-toggle=\"collapse\" data-target=\"$hint_collpaseTarget\" 
-                                        aria-expanded=\"false\" aria-controls=\"collapseExample\"
-                                        onclick=\"hintSelected()\" id=\"$hint_id\">
-                                    Hint        
-                                </button>
-                            </p>
-                            <div class=\"collapse mx-5 w-50\" id=\"$hint_collapse\">
-                                <div class=\"card card-body\">
-                                ".$data[$i]['hint']."
+                            <div id=\"$collapse\" class=\"collapse\" aria-labelledby=\"$heading\" 
+                                data-parent=\"#accordionExample\">
+                                <div class=\"card-body mx-4\">
+                                    ".$data[$i]['question']."
                                 </div>
+                                <div class=\"input-group mb-3 mx-5 w-50\">
+                                    <input type=\"text\" class=\"form-control\" placeholder=\"Answer\" 
+                                            aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
+                                            name=\"$input_id\" id=\"$input_id\">
+                                </div>
+                                <p>
+                                    <button class=\"btn btn-primary mx-5\" type=\"button\" 
+                                            data-toggle=\"collapse\" data-target=\"$hint_collpaseTarget\" 
+                                            aria-expanded=\"false\" aria-controls=\"collapseExample\"
+                                            onclick=\"hintSelected()\" id=\"$hint_id\">
+                                        Hint        
+                                    </button>
+                                </p>
+                                <div class=\"collapse mx-5 w-50\" id=\"$hint_collapse\">
+                                    <div class=\"card card-body\">
+                                    ".$data[$i]['hint']."
+                                    </div>
+                                </div>
+                                <button id=\"$submit_id\"type=\"submit\" value=\"Submit\"  
+                                        class=\"btn btn-dark mx-5 my-2\">
+                                    Submit
+                                </button>
                             </div>
-                            <button id=\"$submit_id\"type=\"button\" onclick=\"nextQuestion()\" 
-                                    class=\"btn btn-dark mx-5 my-2\">
-                                Submit
-                            </button>
                         </div>
-                    </div>";
+                   </form>";
         }
     
     ?>
