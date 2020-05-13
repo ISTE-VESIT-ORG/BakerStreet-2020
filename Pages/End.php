@@ -10,7 +10,7 @@
             return ;
         }
 
-        if(isset($_SESSION['userinfo']['progress_count']) != 11){
+        if(isset($_SESSION['progress_count']) != 11){
             include '../Components/incomplete.php';
 
             return ;
