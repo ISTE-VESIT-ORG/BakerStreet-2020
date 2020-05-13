@@ -69,7 +69,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FE-Quiz_Questions</title>
 </head>
 <body>
     <!--Header-->
@@ -87,8 +87,6 @@
     <!--Questions Content-->
     <?php 
     
-        //echo $_SESSION['progress_count'];
-
         $count = $_SESSION['progress_count'];
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"return submitForm()\">
@@ -104,7 +102,6 @@
                     </div>";
 
                     if(isset($_SESSION['wrongAnswer'])){
-                        //echo $_SESSION['wrongAnswer'];
                         print "<div class=\"alert alert-danger mx-5 w-50\" role=\"alert\">
                                     Invalid Answer! Please Try Again..
                                </div>";

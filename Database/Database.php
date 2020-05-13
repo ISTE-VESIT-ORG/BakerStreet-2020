@@ -8,6 +8,8 @@ require '../vendor/autoload.php';
                 {
                     '_id' : '',
                     'email' : '',
+                    'contact_no' : '',
+                    'division' : '',
                     'progress_count' : '',
                     'points' : '',
                     'incorrect_attempts' : '',
@@ -49,6 +51,8 @@ function createUser($email){
     $collection = connectDB();
     $document = $insertOneResult = $collection->insertOne([
         'email' => $email,
+        'contact_no' => '',
+        'division' => '',
         'progress_count' => 0,
         'points' => 10,
         'incorrect_attempts' => 0,
@@ -116,12 +120,17 @@ function verifyCredentials($email,$otp){
 }
 
 //Update Verification Status
-function updateVerificationStatus($email){
+function updateVerificationStatus($email,$contact_no,$division){
     $collection = connectDB();
 
     $updateResult = $collection->updateOne(
         ['email' => $email],
-        ['$set' => ['verification' => 1]]
+        ['$set' => [
+            'verification' => 1,
+            'contact_no' => $contact_no,
+            'division' => $division
+            ]
+        ]
     );
 }
 

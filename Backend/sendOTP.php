@@ -1,5 +1,7 @@
 <?php
 
+session_start();  
+
 require '../vendor/autoload.php';  
 require_once '../Database/Database.php';
 
@@ -15,7 +17,7 @@ if(isset($_POST['email'])){
         createUser($_SESSION['email']);
         $_SESSION['user_info'] = fetchUser($_SESSION['email']);
 
-        header('location: ../Pages/Home.php');
+        header('location: ../Pages/Register.php');
 
         return ;
     }
@@ -24,7 +26,7 @@ if(isset($_POST['email'])){
         updateOTP($_SESSION['email']);
         $_SESSION['user_info'] = fetchUser($_SESSION['email']);
 
-        header('location: ../Pages/Home.php');
+        header('location: ../Pages/Login.php');
 
         return ;
     }
