@@ -78,8 +78,21 @@
     <!--Content-->
     <div class="card mx-5">
         <div class="card-body row">
-            <h3 class="col"><?php print $user_info['email']; ?></h2>
-            <!-- <button type="button" id="startQuiz" onclick="startQuiz()" class="btn btn-dark col-1 mx-2">Start</button> -->
+            <h4 class="col-3"><?php print $user_info['email']; ?></h4>
+            <?php
+                $current_question = (int)$user_info['progress_count'];
+                $total_questions = (int)sizeof($data);
+
+                $progress = round(($current_question/$total_questions)*100);
+                $progress_percentage = $progress."%";
+
+                print"<div class=\"progress col-6 mx-5 my-auto\">
+                            <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: $progress_percentage;\" 
+                                aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">
+                                ".$progress."%
+                            </div>
+                    </div>";
+            ?>
             <a class="btn btn-dark col-1" href="../Backend/logout.php" role="button">Logout</a>
         </div>
     </div>
