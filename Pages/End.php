@@ -33,9 +33,22 @@
     <?php include '../Components/header.php'?>
 
     <!--Content-->
-    <div class="card mx-5 mt-5">
+    <div class="card mx-5 mt-5 w-50">
         <div class="card-body">
             <h1>Congratulations</h1>
+            <ul class="list-group my-5 w-50">
+                <?php
+                    $time_taken = $user_info['time_end'] - $user_info['time_start'];
+                    $hours = floor($time_taken / 3600);
+                    $minutes = floor(($time_taken / 60) % 60);
+                    $time_taken = $time_taken % 60;
+                    $time =  "$hours:$minutes:$time_taken";
+
+                    print"  <li class=\"list-group-item\"><b>Points: </b>".$user_info['points']."</li>
+                            <li class=\"list-group-item\"><b>Incorrect Attempts: </b>".$user_info['incorrect_attempts']."</li>
+                            <li class=\"list-group-item\"><b>Time taken: </b>".$time."</li>";
+                ?>
+            </ul>
             <a href="../Backend/logout.php" type="button" class="btn btn-dark">End</a>
         </div>
     </div>
