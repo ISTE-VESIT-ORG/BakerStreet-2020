@@ -10,7 +10,12 @@
             return ;
         }
 
-        if(isset($_SESSION['progress_count']) != 11){
+        //fetch user_info
+        ob_start();
+        $user_info = fetchUser($_SESSION['email']);
+        ob_end_clean();
+
+        if( (int)$user_info['progress_count'] != 11){
             include '../Components/incomplete.php';
 
             return ;
