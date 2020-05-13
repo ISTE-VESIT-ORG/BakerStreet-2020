@@ -107,6 +107,12 @@ session_start();
                     $_SESSION['loginStatus'] = null;
                   }
                   
+                  if(isset($_SESSION['loginStatus3'])=='failed'){
+                    print "<div class=\"alert alert-danger mx-5 \" role=\"alert\">
+                              Your profile is incomplete.
+                           </div>";  
+                    $_SESSION['loginStatus2'] = null;
+                  }
                 ?>
           </form>
       </div>

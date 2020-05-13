@@ -2,10 +2,10 @@
 
 session_start();
 
-require '../vendor/autoload.php';  
 require_once '../Database/Database.php';
 
 $_SESSION['loginStatus2'] = null;
+$_SESSION['loginStatus3'] = null;
 
 if(isset($_POST['email']) && isset($_POST['otp'])){
     $_SESSION['email'] = $_POST['email'];
@@ -25,9 +25,17 @@ if(isset($_POST['email']) && isset($_POST['otp'])){
         
         //var_dump($_SESSION['user_info']);
         //print_r($verifyCredentials['email']);
+
+        if($_SESSION['user_info']['contact_no'] == '' or $_SESSION['user_info']['division'] == ''){
+            echo "Invalid Credentials";
+            $_SESSION['loginStatus3'] = "failed";
+
+            header('location: ../Pages/Register.php');
+
+            return ;
+        }
         
         $progress = (int)$_SESSION['user_info']['progress_count'];
-
         echo $progress;
 
         if($progress == 11){

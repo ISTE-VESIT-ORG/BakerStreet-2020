@@ -2,7 +2,6 @@
 
 require '../vendor/autoload.php';  
 
-
 /*
             JSON Format for user:
                 {

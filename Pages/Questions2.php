@@ -1,6 +1,12 @@
 <?php
     require_once '../Backend/auth.php';
 
+    if(!isset($_SESSION['email'])){
+        include '../Components/error.php';
+
+        return ;
+    }
+
     //JSON Parsing
     $data = file_get_contents("../Database/Questions.json");
     $data = json_decode($data,true);
