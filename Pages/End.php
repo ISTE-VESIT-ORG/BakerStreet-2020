@@ -20,6 +20,20 @@
 
             return ;
         }
+
+        function getHoursMinutes($seconds, $format = '%02d:%02d:%02d') {
+
+            if (empty($seconds) || ! is_numeric($seconds)) {
+                return false;
+            }
+        
+            $minutes = round($seconds / 60);
+            $hours = floor($minutes / 60);
+            $remainMinutes = ($minutes % 60);
+            $remainSeconds = ($seconds % 60);
+        
+            return sprintf($format, $hours, $remainMinutes, $remainSeconds);
+        }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,10 +53,7 @@
             <ul class="list-group my-5 w-50">
                 <?php
                     $time_taken = $user_info['time_end'] - $user_info['time_start'];
-                    $hours = floor($time_taken / 3600);
-                    $minutes = floor(($time_taken / 60) % 60);
-                    $time_taken = $time_taken % 60;
-                    $time =  "$hours:$minutes:$time_taken";
+                    $time =  getHoursMinutes($time_taken);
 
                     print"  <li class=\"list-group-item\"><b>Points: </b>".$user_info['points']."</li>
                             <li class=\"list-group-item\"><b>Incorrect Attempts: </b>".$user_info['incorrect_attempts']."</li>
