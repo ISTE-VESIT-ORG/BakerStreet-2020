@@ -12,10 +12,12 @@
   function sendOTP(){
     var emailCheck = document.forms["LoginForm"]["email"].value
     if(emailCheck == ""){
-      alert("OTP will be sent to your Email ID. Please have some patience.")
+      alert("Please enter your Email ID")
       return false
     }
 
+    alert("OTP will be sent to your Email ID. Please have some patience.")
+    
     document.forms["LoginForm"].action="../Backend/sendOTP.php"
     
   }
