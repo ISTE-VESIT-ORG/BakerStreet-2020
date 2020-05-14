@@ -1,13 +1,12 @@
 {
-    "name": "adity/iste_quiz",
+    "name": "amitc/iste_quiz",
     "authors": [
         {
-            "name": "ADI-KOTKAR",
-            "email": "developer.adi.kotkar@gmail.com"
+            "name": "amit328",
+            "email": "51810663+amit328@users.noreply.github.com"
         }
     ],
     "require": {
-        "mongodb/mongodb": "^1.6",
-        "phpmailer/phpmailer": "^6.1"
+        "mongodb/mongodb": "^1.6"
     }
 }
