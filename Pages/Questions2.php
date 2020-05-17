@@ -142,7 +142,7 @@
                 print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
                         <div class=\" mx-5 w-50\" id=\"collapseExample\">
                             <div class=\"card card-body\">
-                                ".$data[0]['hint']."
+                                ".$data[$count]['hint']."
                             </div>
                         </div>";
             }else if($_SESSION['hint_status']==0){
@@ -153,7 +153,7 @@
             print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
                     <div class=\" mx-5 w-50\" id=\"collapseExample\">
                         <div class=\"card card-body\">
-                            ".$data[0]['hint']."
+                            ".$data[$count]['hint']."
                         </div>
                     </div>";
         }else{
@@ -166,7 +166,7 @@
                     </p>
                     <div class=\"collapse mx-5 w-50\" id=\"collapseExample\">
                         <div class=\"card card-body\">
-                            ".$data[0]['hint']."
+                            ".$data[$count]['hint']."
                         </div>
                     </div>";
         }
