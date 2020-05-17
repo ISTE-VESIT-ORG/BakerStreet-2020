@@ -138,7 +138,16 @@
                     }
         
         if($_SESSION['current_points'] <= 0 ){
-            print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>";
+            if($_SESSION['hint_status']==1){
+                print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
+                        <div class=\" mx-5 w-50\" id=\"collapseExample\">
+                            <div class=\"card card-body\">
+                                ".$data[0]['hint']."
+                            </div>
+                        </div>";
+            }else if($_SESSION['hint_status']==0){
+                print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>";
+            }
         }
         else if($_SESSION['hint_status']==1){
             print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
