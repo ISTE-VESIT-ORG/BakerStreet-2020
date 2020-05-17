@@ -42,8 +42,8 @@
             }
             
             updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points'],$current_time);
-            resetIncorrectAttemptsCount($_SESSION['email']);
-            header('location: timer.php');
+            resetIncorrectAttemptsCount($_SESSION['email']); //also resets hint
+            header('location: timer.php'); 
 
         }else{
             echo "not matched";

@@ -21,6 +21,7 @@
     $_SESSION['attempts'] = (int)$user_info['incorrect_attempts'];
     $_SESSION['hints_used'] = (int)$user_info['hints_used'];
     $_SESSION['incorrect_attempts_count'] = (int)$user_info['incorrect_attempts_count'];
+    $_SESSION['hint_status'] = (int)$user_info['hint_status'];
 
     if($_SESSION['progress_count'] == 0){
         $time_start = time();
@@ -114,6 +115,7 @@
         echo "current points: ".(int)$user_info['points']."<br>";
         echo "incorrect_attempts for this question: ".$_SESSION['incorrect_attempts_count']."<br>";
         echo "total incorrect_attempts: ".$_SESSION['attempts']."<br>";
+        echo "Hint Status: ".$_SESSION['hint_status'];
    
         $count = $_SESSION['progress_count'];
 
@@ -138,7 +140,7 @@
         if($_SESSION['current_points'] <= 0 ){
             print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>";
         }
-        else if(isset($_SESSION['hint'])==true){
+        else if($_SESSION['hint_status']==1){
             print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
                     <div class=\" mx-5 w-50\" id=\"collapseExample\">
                         <div class=\"card card-body\">

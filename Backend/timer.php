@@ -5,7 +5,7 @@
 
     $user_info = fetchUser($_SESSION['email']);
     
-    $_SESSION['hint'] = null;
+    $_SESSION['hint_status'] = (int)$user_info['hint_status'];
     $_SESSION['current_points'] = (int)$user_info['points'];
     $_SESSION['incorrect_attempts_count'] = (int)$user_info['incorrect_attempts_count'];
 

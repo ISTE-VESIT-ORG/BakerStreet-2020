@@ -8,6 +8,7 @@
 
     //echo $_SESSION['hint'];
 
+    updateHintStatus($_SESSION['email']);
     updatePointsForHints($_SESSION['email'],$_SESSION['hints_used'],$_SESSION['points']);
 
     header('location: ../Pages/Questions2.php');
