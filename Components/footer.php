@@ -7,8 +7,11 @@
 
     <div id="footer">
         <div class="card bg-dark fixed-bottom">
-        <div class="card-body ml-auto mr-auto">
-            <p class="text-white"> &copy; Copyright: 2020 FE-Quiz</p>
+        <div class="card-body "style="    flex: 1 1 auto;
+    min-height: 0px;
+    padding: 4px;
+">
+            <p class="text-white" style="text-align:center;"> &copy; Copyright: 2020 FE-Quiz</p>
         </div>
         </div>
     </div>
