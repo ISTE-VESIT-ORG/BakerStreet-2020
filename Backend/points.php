@@ -11,6 +11,11 @@
 
     $question_no = (int)$_SESSION['progress_count'];
 
+    // Initial Points => +15 : done
+    // Correct Answer in 1st attempt => +9 : done
+    // Incorrect Attempts => -(3 +(incorrect_attempts)*2) : done
+    // Hint => -(10 + (hints_used)*2) : done
+
     if(isset($_POST['answer'])){
 
         //Collecting Strings
@@ -22,7 +27,7 @@
         if(preg_match('/'.$correct_answer.'/',$input)){
             //echo "Matched";
             $_SESSION['progress_count']++;
-            $_SESSION['points'] += 10;
+            $_SESSION['points'] += 9;
 
             $current_time = time();
             
@@ -37,5 +42,8 @@
             header('location: ../Pages/Questions2.php');
         }
     }
+
+    $user_details = fetchUser($_SESSION['email']);
+    $_SESSION['current_points'] = (int)$user_details['points'];
     
 ?>

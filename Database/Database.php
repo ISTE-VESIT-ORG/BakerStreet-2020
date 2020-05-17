@@ -53,11 +53,12 @@ function createUser($email){
         'contact_no' => '',
         'division' => '',
         'progress_count' => 0,
-        'points' => 10,
+        'points' => 15,
+        'incorrect_attempts_count' => 0,
         'incorrect_attempts' => 0,
-        'hints_used' => '',
-        'time_start' => '',
-        'time_end' => '',
+        'hints_used' => 0,
+        'time_start' => 0,
+        'time_end' => 0,
         'otp' => (int)$otp,
         'verification' => 0
     ]);
@@ -165,7 +166,23 @@ function updatePointsForAttempts($email,$attempts,$points){
 
     $updateResult = $collection->updateOne(
         ['email' => $email],
-        ['$set' => ['incorrect_attempts' => ( (int)$attempts+1 ), 'points' => ( (int)$points-2 )]]
+        ['$set' => [
+            'points' => ( (int)$points - ( 3 + (int)$attempts*2 ) ),
+            'incorrect_attempts' => ( (int)$attempts+1 ), 
+        ]]
+    );
+}
+
+//Update points for hints
+function updatePointsForHints($email,$hints_used,$points){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'points' => ( (int)$points - ( 10 + (int)$hints_used*2 ) ),
+            'hints_used' => ( (int)$hints_used+1 ), 
+        ]]
     );
 }
 
