@@ -11,6 +11,7 @@ require '../vendor/autoload.php';
                     'division' : '',
                     'progress_count' : '',
                     'points' : '',
+                    'incorrect_attempts_count' : '',
                     'incorrect_attempts' : '',
                     'hints_used' : '',
                     'time_start' : '',
@@ -186,4 +187,28 @@ function updatePointsForHints($email,$hints_used,$points){
     );
 }
 
+//reset incorrect_attempts_count
+function resetIncorrectAttemptsCount($email){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'incorrect_attempts_count' => 0 
+        ]]
+    );
+}
+
+//update incorrect_attempts
+function updateIncorrectAttempts($email,$attempts,$attempts_count){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'incorrect_attempts' => (int)$attempts+1,
+            'incorrect_attempts_count' =>  (int)$attempts_count+1,
+        ]]
+    );
+}
 ?>

@@ -20,6 +20,7 @@
     $_SESSION['points'] = (int)$user_info['points'];
     $_SESSION['attempts'] = (int)$user_info['incorrect_attempts'];
     $_SESSION['hints_used'] = (int)$user_info['hints_used'];
+    $_SESSION['incorrect_attempts_count'] = (int)$user_info['incorrect_attempts_count'];
 
     if($_SESSION['progress_count'] == 0){
         $time_start = time();
@@ -109,9 +110,11 @@
     <!--Questions Content-->
     <?php 
 
-        echo $_SESSION['current_points']."<br>";
-        echo (int)$user_info['points'];
-    
+        echo "points before this question: ".$_SESSION['current_points']."<br>";
+        echo "current points: ".(int)$user_info['points']."<br>";
+        echo "incorrect_attempts for this question: ".$_SESSION['incorrect_attempts_count']."<br>";
+        echo "total incorrect_attempts: ".$_SESSION['attempts']."<br>";
+   
         $count = $_SESSION['progress_count'];
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"\">

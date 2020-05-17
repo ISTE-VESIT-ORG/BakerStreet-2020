@@ -14,6 +14,7 @@
     // Initial Points => +15 : done
     // Correct Answer in 1st attempt => +9 : done
     // Incorrect Attempts => -(3 +(incorrect_attempts)*2) : done
+    // Incorrect Attempts => 1 - +8, 2 - +6, 3 or more - +3  
     // Hint => -(10 + (hints_used)*2) : done
 
     if(isset($_POST['answer'])){
@@ -27,18 +28,29 @@
         if(preg_match('/'.$correct_answer.'/',$input)){
             //echo "Matched";
             $_SESSION['progress_count']++;
-            $_SESSION['points'] += 9;
 
             $current_time = time();
+
+            if($_SESSION['incorrect_attempts_count'] == 1){
+                $_SESSION['points'] += 8;
+            }else if($_SESSION['incorrect_attempts_count'] == 2){
+                $_SESSION['points'] += 6;
+            }else if($_SESSION['incorrect_attempts_count'] >= 3){
+                $_SESSION['points'] += 3;
+            }else{
+                $_SESSION['points'] += 9;
+            }
             
             updateProgress($_SESSION['email'],$_SESSION['progress_count'],$_SESSION['points'],$current_time);
+            resetIncorrectAttemptsCount($_SESSION['email']);
             header('location: timer.php');
 
         }else{
             echo "not matched";
 
             $_SESSION['wrongAnswer'] = "true";
-            updatePointsForAttempts($_SESSION['email'],$_SESSION['attempts'],$_SESSION['points']);
+            //updatePointsForAttempts($_SESSION['email'],$_SESSION['attempts'],$_SESSION['points']);
+            updateIncorrectAttempts($_SESSION['email'],$_SESSION['attempts'],$_SESSION['incorrect_attempts_count']);
             header('location: ../Pages/Questions2.php');
         }
     }
