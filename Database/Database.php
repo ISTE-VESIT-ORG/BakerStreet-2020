@@ -11,7 +11,9 @@ require '../vendor/autoload.php';
                     'division' : '',
                     'progress_count' : '',
                     'points' : '',
+                    'incorrect_attempts_count' : '',
                     'incorrect_attempts' : '',
+                    'hint_status' : '',
                     'hints_used' : '',
                     'time_start' : '',
                     'time_end' : '',
@@ -53,11 +55,13 @@ function createUser($email){
         'contact_no' => '',
         'division' => '',
         'progress_count' => 0,
-        'points' => 10,
+        'points' => 15,
+        'incorrect_attempts_count' => 0,
         'incorrect_attempts' => 0,
-        'hints_used' => '',
-        'time_start' => '',
-        'time_end' => '',
+        'hint_status' => 0,
+        'hints_used' => 0,
+        'time_start' => 0,
+        'time_end' => 0,
         'otp' => (int)$otp,
         'verification' => 0
     ]);
@@ -165,7 +169,61 @@ function updatePointsForAttempts($email,$attempts,$points){
 
     $updateResult = $collection->updateOne(
         ['email' => $email],
-        ['$set' => ['incorrect_attempts' => ( (int)$attempts+1 ), 'points' => ( (int)$points-2 )]]
+        ['$set' => [
+            'points' => ( (int)$points - ( 3 + (int)$attempts*2 ) ),
+            'incorrect_attempts' => ( (int)$attempts+1 ), 
+        ]]
+    );
+}
+
+//Update points for hints
+function updatePointsForHints($email,$hints_used,$points){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'points' => ( (int)$points - ( 10 + (int)$hints_used*2 ) ),
+            'hints_used' => ( (int)$hints_used+1 ), 
+        ]]
+    );
+}
+
+//reset incorrect_attempts_count
+function resetIncorrectAttemptsCount($email){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'incorrect_attempts_count' => 0,
+            'hint_status' => 0 
+        ]]
+    );
+}
+
+//update incorrect_attempts
+function updateIncorrectAttempts($email,$attempts,$attempts_count){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'incorrect_attempts' => (int)$attempts+1,
+            'incorrect_attempts_count' =>  (int)$attempts_count+1,
+        ]]
+    );
+}
+
+//Update hints
+function updateHintStatus($email){
+    $collection = connectDB();
+
+    $updateResult = $collection->updateOne(
+        ['email' => $email],
+        ['$set' => [
+            'hint_status' => 1 
+        ]]
     );
 }
 

@@ -13,12 +13,15 @@
 
     //fetch user_info
     ob_start();
-    $user_info = verifyCredentials($_SESSION['email'],$_SESSION['otp']);
+    $user_info = fetchUser($_SESSION['email']);
     ob_end_clean();
 
     $_SESSION['progress_count'] = (int)$user_info['progress_count'];
     $_SESSION['points'] = (int)$user_info['points'];
     $_SESSION['attempts'] = (int)$user_info['incorrect_attempts'];
+    $_SESSION['hints_used'] = (int)$user_info['hints_used'];
+    $_SESSION['incorrect_attempts_count'] = (int)$user_info['incorrect_attempts_count'];
+    $_SESSION['hint_status'] = (int)$user_info['hint_status'];
 
     if($_SESSION['progress_count'] == 0){
         $time_start = time();
@@ -65,7 +68,9 @@
             document.getElementById("hint").disabled = true
         }, 100);
 
-        //alert("Points will be deducted if you choose for hint! ")  
+        alert("Points will be deducted if you choose for hint! ")  
+
+        document.forms['questionForm'].action="../Backend/hint.php";
         
     }
 </script>
@@ -79,7 +84,7 @@
 </head>
 <body>
     <!--Header-->
-    <?php include '../Components/header.php'?>
+    <?php include '../Components/header.php'; ?>
 
     <!--Content-->
     <div class="card mx-5">
@@ -105,10 +110,16 @@
 
     <!--Questions Content-->
     <?php 
-    
+
+        echo "points before this question: ".$_SESSION['current_points']."<br>";
+        echo "current points: ".(int)$user_info['points']."<br>";
+        echo "incorrect_attempts for this question: ".$_SESSION['incorrect_attempts_count']."<br>";
+        echo "total incorrect_attempts: ".$_SESSION['attempts']."<br>";
+        echo "Hint Status: ".$_SESSION['hint_status'];
+   
         $count = $_SESSION['progress_count'];
 
-        print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"return submitForm()\">
+        print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"\">
                 <div class=\"card mx-5 my-5\">
                     <h3 class=\"card-title mx-5 my-2\"> Question ".($count+1)." </h3>
                     <div class=\"card-body mx-4\">
@@ -125,9 +136,29 @@
                                     Invalid Answer! Please Try Again..
                                </div>";
                     }
-                    
-        print"           <p>
-                        <button class=\"btn btn-primary mx-5\" type=\"button\" data-toggle=\"collapse\"
+        
+        if($_SESSION['current_points'] <= 0 ){
+            if($_SESSION['hint_status']==1){
+                print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
+                        <div class=\" mx-5 w-50\" id=\"collapseExample\">
+                            <div class=\"card card-body\">
+                                ".$data[$count]['hint']."
+                            </div>
+                        </div>";
+            }else if($_SESSION['hint_status']==0){
+                print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>";
+            }
+        }
+        else if($_SESSION['hint_status']==1){
+            print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
+                    <div class=\" mx-5 w-50\" id=\"collapseExample\">
+                        <div class=\"card card-body\">
+                            ".$data[$count]['hint']."
+                        </div>
+                    </div>";
+        }else{
+            print"           <p>
+                        <button class=\"btn btn-primary mx-5\" type=\"submit\" data-toggle=\"collapse\"
                                 data-target=\"#collapseExample\" aria-expanded=\"false\" 
                                 aria-controls=\"collapseExample\" id=\"hint\" onclick=\"hintSelected()\">
                             Hint
@@ -135,12 +166,14 @@
                     </p>
                     <div class=\"collapse mx-5 w-50\" id=\"collapseExample\">
                         <div class=\"card card-body\">
-                            ".$data[0]['hint']."
+                            ".$data[$count]['hint']."
                         </div>
-                    </div>
-                    <div class=\"mx-5 w-50 my-2\">
+                    </div>";
+        }
+
+        print       "<div class=\"mx-5 w-50 my-2\">
                         <button type=\"submit\" class=\"btn btn-dark\" 
-                                value=\"Submit\" id=\"submit\"> 
+                                value=\"Submit\" id=\"submit\" onclick=\"submitForm()\"> 
                             Submit
                         </button>
                     </div>
