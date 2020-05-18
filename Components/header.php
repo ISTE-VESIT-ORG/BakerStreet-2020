@@ -1,7 +1,7 @@
 <!--Navbar-->
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
-  <a class="navbar-brand ml-5" href="#">
+  <a class="navbar-brand ml-5" href="Home.php">
   <i class="fas fa-user-secret fa-2x text-white"></i></a>
   <h4><b class="text-warning "><i>221B Baker Street</i></b></h4>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,10 +10,10 @@
   <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Leaderboard <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../Pages/Home.php">Home</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="#">Leaderboard <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item mx-3">
         <a class="nav-link" href="#">Logout</a>
