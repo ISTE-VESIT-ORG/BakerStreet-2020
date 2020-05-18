@@ -62,7 +62,7 @@ session_start();
     <!--Header-->
     <?php include '../Components/header.php'?>
 
-     <!--Request OTP-->
+     <!--Register-->
      <div class="container">
         <div class="d-flex justify-content-center h-100">
             <div class="card">
@@ -111,18 +111,18 @@ session_start();
                   <input autocomplete="off" id="OTPinput" type="tel" pattern="[0-9]{4}" required name="otp" class="form-control" placeholder="OTP">
                 </div>
                 <div class="form-group ">
-                  <input type="submit" id="requestOTP" value="Send OTP" class="btn login_btn btn-warning">
+                  <input type="submit" id="requestOTP" value="Register" class="btn login_btn btn-warning">
                 </div>
                 <?php
                   if(isset($_SESSION['loginStatus'])=='failed'){
-                    print "<div class=\"alert alert-danger mx-5\" role=\"alert\">
+                    print "<div class=\"alert alert-danger mx-5 text-center\" role=\"alert\">
                               Invalid Credentials
                            </div>";  
                     $_SESSION['loginStatus'] = null;
                   }
                   
                   if(isset($_SESSION['loginStatus3'])=='failed'){
-                    print "<div class=\"alert alert-danger mx-5\" role=\"alert\">
+                    print "<div class=\"alert alert-danger mx-5 text-center\" role=\"alert\">
                               Your profile is incomplete.
                            </div>";  
                     $_SESSION['loginStatus2'] = null;
