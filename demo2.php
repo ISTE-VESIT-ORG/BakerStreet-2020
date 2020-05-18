@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
-           <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- bootstrap 4 -->
@@ -14,9 +12,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
     <style>
         #dialogue-box{
-        
+            background-color: black;
             color: white;
             text-align: center;
             padding: 10px;
@@ -55,24 +54,16 @@
             position: relative;
             float: bottom;
         }
-      
-
-
-        }
-.try{
- height:80%;
- width:80%;
-}
     </style>
+
 </head>
-<body>
-  <?php include '../Components/header.php'?>
-  <br>
+<body >
     <br>
     <br>
     <br>
     <br>
-    <div class="container try">
+    <br>
+    <div class="container">
         <div class="row">
             <div class="col-1"></div>
             <div id="dialogue-box" class="col-10 row">
@@ -84,11 +75,14 @@
             <div class="col-1"></div>
         </div>
     </div>
-  <div id="particles-js">
+<!-- right side Character -->
+<!-- <div class="col-8"><div class="rectangle-right">Yes Sherlock?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="ch2.png" alt="" ><h2>Character 2</h2></div> -->
+<!-- left side Character -->
+<!-- <div class="col-4"><img src="ch1.png" alt="" ><h2>Character 1</h2></div><div class="col-8"><div class="rectangle-left">Hey John.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div> -->
+<!-- narrations -->
+<!-- <div class="col-1"></div><div class="col-10"><div class="rectangle-center">awfgawfguiaseghas</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div> -->
 
-   
-    </div>
-        <script>
+    <script>
         var i=0;
         var box = document.getElementById('dialogue-box'); 
         function change(){
@@ -102,7 +96,7 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="https://i.pinimg.com/236x/77/03/8a/77038a8120d63dfb1d5dd92ac2bc9041.jpg" class="try" alt="" ><h2>Character 1</h2></div><div class="col-8"><div class="rectangle-left">Hey John.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="https://i.pinimg.com/236x/77/03/8a/77038a8120d63dfb1d5dd92ac2bc9041.jpg" alt="" ><h2>Character 1</h2></div><div class="col-8"><div class="rectangle-left">Hey John.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 2:
                 box.innerHTML = '<div class="col-8"><div class="rectangle-right">Yes Sherlock?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="ch2.png" alt="" ><h2>Character 2</h2></div>';
@@ -164,11 +158,5 @@
             }          
         }
       </script>
-
-
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
- <?php include '../Components/footer.php';?>
-
 </body>
 </html>
