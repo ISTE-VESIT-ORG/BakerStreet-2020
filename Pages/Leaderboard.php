@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riddlezz_Leaderboard</title>
+    <title>221B Baker Street-Leaderboard</title>
 </head>
 <body style="background-image: url('../Images/Leaderboard.jpg'); ">
     
