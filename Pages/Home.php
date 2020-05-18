@@ -53,12 +53,12 @@
       ?>
       
 
-      <!--Login-->
+      <!--Request OTP-->
       <div class="container">
         <div class="d-flex justify-content-center h-100">
             <div class="card">
               <div class="card-header mx-auto">
-                <h3>Register</h3>
+                <h3>Request OTP</h3>
               </div>
               <div class="card-body">
               <form name="LoginForm" method="POST" onsubmit="return sendOTP()">
