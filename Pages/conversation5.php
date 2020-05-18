@@ -94,10 +94,10 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="https://i.pinimg.com/236x/77/03/8a/77038a8120d63dfb1d5dd92ac2bc9041.jpg" alt="" width="80%" height="90%"><h2>Character 1</h2></div><div class="col-8"><div class="rectangle-left">Watching my initials was again a shock to the system and the public. </div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Watching my initials was again a shock to the system and the public. </div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Okay Sherlock, we are flatmates, right? When I moved in you showed me a skull and addressed it as your friend. Did you mean it? </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="ch2.png" alt="" ><h2>Character 2</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Okay Sherlock, we are flatmates, right? When I moved in you showed me a skull and addressed it as your friend. Did you mean it? </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt="" ><h2>John</h2></div>';
                 break;
              case 3:
                 box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">There was no contact number listed so we just waited for that porcelain clock on the wall to proclaim the time as ELEVEN.We received the call.A recorded audio was played...</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'

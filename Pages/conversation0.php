@@ -16,7 +16,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <style>
         #dialogue-box{
-        
+           
             color: white;
             text-align: center;
             padding: 10px;
@@ -94,11 +94,7 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Italy! We were really amazed to see the power of the kidnapper to take Olivia overseas.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
-                break;
-           
-             case 2:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">We assumed a great network involved. The only way to get Olivia was to visit Italy.After we went to Italy, while exiting from the airport, an officer said, “Welcome to Italy, Sherlock and John”, and gave us this letter:</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
            
             }          
