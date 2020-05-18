@@ -19,18 +19,13 @@
     aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" 
-          data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-          aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> -->
   <div class="collapse navbar-collapse justify-content-end mr-5" id="basicExampleNav">
     <ul class="navbar-nav ">
       <li class="nav-item mx-3">
         <a class="nav-link" href="../Pages/Home.php">Home</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Leaderboard</a>
+        <a class="nav-link" href="../Pages/Leaderboard.php">Leaderboard</a>
       </li>
       <?php
               error_reporting(E_ERROR | E_WARNING | E_PARSE);
