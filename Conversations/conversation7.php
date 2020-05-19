@@ -139,13 +139,13 @@
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Thank you so much. I was so scared that I couldnt think of anything.</div><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/Olivia.png" alt="" class="try"><h2>Olivia</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Thank you so much. I was so scared that I couldnt think of anything.</div><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/O.png" alt="" class="try"><h2>Olivia</h2></div>';
                 break;
                 case 3:
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" class="try"><h4>Sherlock</h4></div><div class="col-8"><div class="rectangle-left"> Can you describe your kidnapper?</div><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 4:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  I don’t know. He wore a mask. The last thing I remember is I was in my house sleeping and heard someone break in. I could hear my dad screaming. I woke up and felt a hard hit on my head just before I lost consciousness.</div><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/Olivia.png" alt="" class="try"><h2>Olivia</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  I don’t know. He wore a mask. The last thing I remember is I was in my house sleeping and heard someone break in. I could hear my dad screaming. I woke up and felt a hard hit on my head just before I lost consciousness.</div><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/O.png" alt="" class="try"><h2>Olivia</h2></div>';
                 break;
                 case 5:
                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" class="try"><h4>Sherlock</h4></div><div class="col-8"><div class="rectangle-left"> Okay Olivia, no problem. Just calm down we will take you back safely.</div><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
