@@ -144,7 +144,7 @@
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"\">
                 <div class=\"card mt-2\" id=\"questionCard\">
-                    <h3 class=\"card-title mx-5 mb-2 mt-5 text-center\"> Case ".($count+1)." </h3>
+                    <h3 class=\"card-title mx-5 mb-2 mt-5 text-center\"> Scene ".($count+1)." </h3>
                     <div class=\"card-body mx-4 text-center\">
                         <p style=\"font-size: 17px\">".$data[$count]['question']."</p>
                     </div>

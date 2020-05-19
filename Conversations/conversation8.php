@@ -103,23 +103,23 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">The next day was Wednesday</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">The next day was Wednesday</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> We sensed something strange about this lead so we asked Olivia about the names.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src=" ../images/john.png " alt=""width="80%" height="80%" ><h2>Jhon</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> We sensed something strange about this lead so we asked Olivia about the names.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src=" ../Images/john.png " alt=""width="80%" height="80%" ><h2>Jhon</h2></div>';
                 break;
                 case 3:
-                box.innerHTML = '<div class="col-4"><img src="" alt="../images/Olivia.png" width="80%" height="80%"><h2>Olivia</h2></div><div class="col-8"><div class="rectangle-left">  Yes they are my friends in London.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="" alt="../Images/Olivia.png" width="80%" height="80%"><h2>Olivia</h2></div><div class="col-8"><div class="rectangle-left">  Yes they are my friends in London.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 4:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  We headed back to London to provide her friends security.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  We headed back to London to provide her friends security.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div>';
                 break;
                 case 5:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  We arranged a foster home for Olivia with the help of my brother Mycroft.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  We arranged a foster home for Olivia with the help of my brother Mycroft.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 6:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We were then informed that Erin and Scarlett went on a trek trip with their friends.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Case</a> </div><div class="col-4"><img src="../images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We were then informed that Erin and Scarlett went on a trek trip with their friends.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a> </div><div class="col-4"><img src="../Images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
                 break;
            
            

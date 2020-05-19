@@ -104,13 +104,13 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">The suspicion started to grow that I was the killer. It was clear until now that someone was playing with me. The question was, who?We searched the room and found an unsolved case file. I looked into it.It was about Mr.Schlansky.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">The suspicion started to grow that I was the killer. It was clear until now that someone was playing with me. The question was, who?We searched the room and found an unsolved case file. I looked into it.It was about Mr.Schlansky.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Mr. Schlansky? He wasinvited to the wedding.He didnt show up.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt="" ><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Mr. Schlansky? He wasinvited to the wedding.He didnt show up.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" ><h2>John</h2></div>';
                 break;
             case 3:
-                box.innerHTML = '<div class="row"><div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Maybe something has happened to him.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="ml-2 btn btn-dark">Move to next Case</a></div></div>';
+                box.innerHTML = '<div class="row"><div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Maybe something has happened to him.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="ml-2 btn btn-dark">Move to next Scene</a></div></div>';
                 break;
            
             }          

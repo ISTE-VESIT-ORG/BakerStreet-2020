@@ -58,7 +58,7 @@
             background-image:url('../Images/1.jpg')
         }
         #card{
-            /* margin-bottom:300px; */
+            margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
         }
     </style>
@@ -104,7 +104,7 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="row"><div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><br><br><br><br><br><br><br><br><br><div class="float-right" style="margin-left:40%"><a href="../Pages/Questions2.php" type="button" class="btn btn-dark">Move to the Case</a></div></div></div>';
+                box.innerHTML = '<div class="row"><div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><br><br><br><br><br><br><br><br><br><div class="float-right" style="margin-left:40%"><a href="../Pages/Questions2.php" type="button" class="btn btn-dark">Move to the Scene</a></div></div></div>';
                 break;
            
             }          

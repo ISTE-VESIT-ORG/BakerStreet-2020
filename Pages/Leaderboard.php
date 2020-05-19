@@ -33,6 +33,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Email ID</th>
                         <th scope="col">Score</th>
+                        <th scope="col">Progress</th>
                         <th scope="col">Time</th>
                         </tr>
                     </thead>
@@ -53,6 +54,7 @@
                                         <th scope=\"row\">$i</th>
                                         <td>".$state['email']."</td>
                                         <td>".$state['points']."</td>
+                                        <td>".$state['progress_count']."</td>
                                         <td> NA  </td>
                                     </tr>";
                                 }else{
@@ -62,6 +64,7 @@
                                             <th scope=\"row\">$i</th>
                                             <td>".$state['email']."</td>
                                             <td>".$state['points']."</td>
+                                            <td>".$state['progress_count']."</td>
                                             <td>".$time."</td>
                                         </tr>";
                                 }

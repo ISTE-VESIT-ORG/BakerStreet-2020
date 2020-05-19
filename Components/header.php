@@ -29,7 +29,7 @@
               session_start();
               if(isset($_SESSION['progress'])){
                   print"<li class=\"nav-item\">
-                          <a class=\"nav-link\" href=\"../Backend/timer.php\">Current Case<span class=\"sr-only\">(current)</span></a>
+                          <a class=\"nav-link\" href=\"../Backend/timer.php\">Current Scene<span class=\"sr-only\">(current)</span></a>
                         </li>";
               }
           ?>
@@ -42,6 +42,15 @@
               if(isset($_SESSION['email'])){
                   print"<li class=\"nav-item\">
                           <a class=\"nav-link\" href=\"../Backend/logout.php\">Logout<span class=\"sr-only\">(current)</span></a>
+                        </li>";
+              }
+          ?>
+          <?php
+              error_reporting(E_ERROR | E_WARNING | E_PARSE);
+              session_start();
+              if(isset($_SESSION['progress'])){
+                  print"<li class=\"nav-item\">
+                          <h3><span class=\"badge badge-secondary ml-3\">".$_SESSION['points']."</span></h3>
                         </li>";
               }
           ?>

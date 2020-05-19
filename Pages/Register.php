@@ -101,6 +101,16 @@ session_start();
                     <option value="D4B">D4B</option>
                     <option value="D5A">D5A</option>
                     <option value="D5B">D5B</option>
+                    <option value="D6A">D6A</option>
+                    <option value="D6B">D6B</option>
+                    <option value="D7A">D7A</option>
+                    <option value="D7B">D7B</option>
+                    <option value="D8">D8</option>
+                    <option value="D9A">D9A</option>
+                    <option value="D9B">D9B</option>
+                    <option value="D10">D10</option>
+                    <option value="MCA 1M">MCA 1M</option>
+                    <option value="MCA 1A">MCA 1A</option>
                   </select>
                 </div>
                 <!--OTP-->

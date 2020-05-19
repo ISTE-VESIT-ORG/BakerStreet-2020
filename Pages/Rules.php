@@ -59,8 +59,6 @@
 
                         A maximum of <b>9</b> points will be credited for each round.<br><br>
 
-                        With every incorrect attempt <b>2</b> points will be deducted.<br><br>
-
                         For eg- For the  first correct attempt you will be awarded with <b>9</b> points, for the second correct attempt <b>8</b> points, for the third <b>6</b> points and from fourth onwards <b>3</b> points.<br><br>
 
                         You will be credited with a minimum of <b>3</b> points for passing each round.<br><br>
