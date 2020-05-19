@@ -59,6 +59,7 @@
         }
         #card{
             margin-bottom:100px;
+            background-color: rgba(0,0,0,0.75)
         }
     </style>
 </head>
@@ -74,7 +75,7 @@
     <br>
     <br>
     <div class="container">
-        <div class="row">
+        <div class="row" id="card">
             
             <div id="dialogue-box" class="col-12 row">
                 <h4 class="ml-5"><b>
@@ -107,7 +108,7 @@
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">We assumed a great network involved. The only way to get Olivia was to visit Italy.After we went to Italy, while exiting from the airport, an officer said, “Welcome to Italy, Sherlock and John”, and gave us this letter:</div><br><button class="btn btn-info button" onclick="back();">back</button> <a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Next</a></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">We assumed a great network involved. The only way to get Olivia was to visit Italy.After we went to Italy, while exiting from the airport, an officer said, “Welcome to Italy, Sherlock and John”, and gave us this letter:</div><br><button class="btn btn-info button" onclick="back();">back</button> <a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Case</a></div><div class="col-1"></div>'
                 break;
            
             }          

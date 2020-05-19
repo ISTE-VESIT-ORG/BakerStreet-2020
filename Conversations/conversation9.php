@@ -58,7 +58,8 @@
             background-image:url('../Images/10.jpg')
         }
         #card{
-            margin-bottom:1000px;
+            margin-bottom:100px;
+            background-color: rgba(0,0,0,0.75)
         }
     </style>
 </head>
@@ -74,10 +75,10 @@
     <br>
     <br>
     <div class="container">
-        <div class="row">
+        <div class="row" id="card">
             
             <div id="dialogue-box" class="col-12 row">
-                <h4><b>
+                <h4 class="ml-5"><b>
                    Lestrade starts interrogating Erin.
 
     </b>
@@ -132,7 +133,7 @@
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png"" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">   Keep your guard up, Watson. This is a set up. Here the time arrived</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 9:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Here the time arrived</div><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Next</a> </div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Here the time arrived</div><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Case</a> </div><div class="col-1"></div>'
                 break;
             }          
         }
@@ -141,7 +142,7 @@
 
 <script type="text/javascript"src="../js/particles.js"></script>
 <script type="text/javascript" src="../js/app.js"></script>
- <?php //include '../Components/footer.php';?>
+ <?php include '../Components/footer.php';?>
 
 </body>
 </html>

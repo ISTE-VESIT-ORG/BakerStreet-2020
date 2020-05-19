@@ -24,6 +24,15 @@
       <li class="nav-item mx-3">
         <a class="nav-link" href="../Pages/Home.php">Home</a>
       </li>
+      <?php
+              error_reporting(E_ERROR | E_WARNING | E_PARSE);
+              session_start();
+              if(isset($_SESSION['progress'])){
+                  print"<li class=\"nav-item\">
+                          <a class=\"nav-link\" href=\"../Backend/timer.php\">Current Case<span class=\"sr-only\">(current)</span></a>
+                        </li>";
+              }
+          ?>
       <li class="nav-item mx-3">
         <a class="nav-link" href="../Pages/Leaderboard.php">Leaderboard</a>
       </li>

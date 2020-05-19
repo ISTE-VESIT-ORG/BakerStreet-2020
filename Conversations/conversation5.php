@@ -59,6 +59,7 @@
         }
         #card{
             margin-bottom:100px;
+            background-color: rgba(0,0,0,0.75)
         }
     </style>
 </head>
@@ -73,9 +74,9 @@
     <br>
     <br>
     <div class="container">
-        <div class="row">
+        <div class="row " id="card">
             
-            <div id="dialogue-box" class="col-12 row">
+            <div id="dialogue-box" class="col-12 row ">
             <h4 class="ml-5"><b>
                    Let's move to the next Case
             </b></h4> 
@@ -108,7 +109,7 @@
                 box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Okay Sherlock, we are flatmates, right? When I moved in you showed me a skull and addressed it as your friend. Did you mean it? </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt="" ><h2>John</h2></div>';
                 break;
              case 3:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">There was no contact number listed so we just waited for that porcelain clock on the wall to proclaim the time as ELEVEN.We received the call.A recorded audio was played...</div><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Next</a> </div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">There was no contact number listed so we just waited for that porcelain clock on the wall to proclaim the time as ELEVEN.We received the call.A recorded audio was played...</div><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Case</a> </div><div class="col-1"></div>'
                 break;
            
             }          

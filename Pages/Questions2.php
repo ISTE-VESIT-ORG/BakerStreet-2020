@@ -146,7 +146,7 @@
                 <div class=\"card mt-2\" id=\"questionCard\">
                     <h3 class=\"card-title mx-5 mb-2 mt-5 text-center\"> Case ".($count+1)." </h3>
                     <div class=\"card-body mx-4 text-center\">
-                        ".$data[$count]['question']."
+                        <p style=\"font-size: 17px\">".$data[$count]['question']."</p>
                     </div>
                     <div class=\"input-group mb-3 mx-auto w-50\">
                         <input type=\"text\" class=\"form-control text-center\" placeholder=\"Answer\" 
@@ -159,12 +159,21 @@
                                     Invalid Answer! Please Try Again..
                                </div>";
                     }
+
+                    print       "<div class=\"align-self-center mx-auto mt-2 mb-3\">
+                        <button type=\"submit\" class=\"btn btn-dark\" 
+                                value=\"Submit\" id=\"submit\" onclick=\"submitForm()\"> 
+                            Submit
+                        </button>
+                    </div>
+                
+            ";
         
         if($_SESSION['current_points'] <= 0 ){
             if($_SESSION['hint_status']==1){
                 print"  <p class=\"align-self-center mx-auto\"><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
                         <div class=\" mx-5 w-50\" id=\"collapseExample\">
-                            <div class=\"card card-body\">
+                            <div class=\"card card-body mb-5\">
                                 ".$data[$count]['hint']."
                             </div>
                         </div>";
@@ -176,7 +185,7 @@
             print"  <p class=\"align-self-center mx-auto\">
                     <button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
                     <div class=\" align-self-center mx-auto w-75 text-center\" id=\"collapseExample\">
-                        <div class=\"card card-body text-dark\">
+                        <div class=\"card card-body text-dark mb-5\">
                             ".$data[$count]['hint']."
                         </div>
                     </div>";
@@ -188,21 +197,14 @@
                             Hint
                         </button>
                     </p>
-                    <div class=\"collapse mx-5 w-50\" id=\"collapseExample\">
+                    <div class=\"collapse mx-5 w-50 mb-5\" id=\"collapseExample\">
                         <div class=\"card card-body\">
                             ".$data[$count]['hint']."
                         </div>
-                    </div>";
+                    </div></div></form>";
         }
 
-        print       "<div class=\"align-self-center mx-auto mt-2 mb-5\">
-                        <button type=\"submit\" class=\"btn btn-dark\" 
-                                value=\"Submit\" id=\"submit\" onclick=\"submitForm()\"> 
-                            Submit
-                        </button>
-                    </div>
-                </div>
-             </form>";
+        
         
     ?>
         

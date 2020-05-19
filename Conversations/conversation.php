@@ -57,7 +57,9 @@
         body{
             background-image:url('../Images/Home.jpg')
         }
-      
+        #card{
+            background-color: rgba(0,0,0,0.75)
+        }
 
 
         }
@@ -81,9 +83,9 @@
     <br>
     <div class="container try">
         <div style="margin-left:40%">
-            <a href="../Conversations/conversation0.php" type="button" class="btn btn-dark">View your 1st Case</a>
+            
         </div>
-        <div class="row">
+        <div class="row" id="card">
             <div class="col-1"></div>
             <div id="dialogue-box" class="col-10 row" >
                 <p>
@@ -112,28 +114,28 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" class="try" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Hey John.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" class="try" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Hey John.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Yes Sherlock?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Yes Sherlock?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
                 break;
             case 3:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png "alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">I know these couple of days have been quite difficult for us, but trust me like you always have.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png "alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">I know these couple of days have been quite difficult for us, but trust me like you always have.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 4:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">For god’s sake Sherlock, why don’t you take external help for this one?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt="" width="80%" height="80%"><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">For god’s sake Sherlock, why don’t you take external help for this one?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" width="80%" height="80%"><h2>John</h2></div>';
                 break;
             case 5:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Look John,I am a consultant detective. People consult me to solve crimes.And it’s not vice versa</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Look John,I am a consultant detective. People consult me to solve crimes.And it’s not vice versa</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 6:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Oh my goodness Sherlock, don’t tell me that this has to do something with you goddamn ego.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Oh my goodness Sherlock, don’t tell me that this has to do something with you goddamn ego.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
                 break;
             case 7:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Okay John, let’s do this one as your way.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Okay John, let’s do this one as your way.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 8:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Okay ladies and gentlemen. First of all thank you for volunteering to help me.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Okay ladies and gentlemen. First of all thank you for volunteering to help me.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 9:
                 box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">This is particularly a case in which I am at a cliffhanger and need a fresh pair of eyes and hence I have asked you to help me.</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
@@ -169,7 +171,7 @@
                 box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Yet one important guest who was supposed to be at the wedding, didn’t appear. Mr. Schlansky, John’s old friend, worked together at the military service.</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
                 break;
             case 19:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">My brother, Mycroft Holmes.<br>Mycroft Holmes is older to me by seven years. He is the British Government when he"s not too busy being the British Secret Service or the CIA on a freelance basis.</div><br><button class="btn btn-info button" onclick="back();">back</button> </div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">My brother, Mycroft Holmes.<br>Mycroft Holmes is older to me by seven years. He is the British Government when he"s not too busy being the British Secret Service or the CIA on a freelance basis.</div><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Backend/timer.php" type="button" class="ml-2 btn btn-dark">View your 1st Case</a> </div><div class="col-1"></div>'
                 break;
             }          
         }

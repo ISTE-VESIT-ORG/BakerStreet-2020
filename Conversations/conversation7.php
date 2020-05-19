@@ -58,7 +58,8 @@
             background-image:url('../Images/8.jpg')
         }
         #card{
-            margin-bottom:250px;
+            margin-bottom:100px;
+            background-color: rgba(0,0,0,0.75)
         }
     </style>
 </head>
@@ -74,10 +75,10 @@
     <br>
     <br>
     <div class="container">
-        <div class="row">
+        <div class="row" id="card">
             
             <div id="dialogue-box" class="col-12 row">
-                <h4 class="text-dark"><b>
+                <h4 class="ml-3"><b>
                    After we went to the chemistry Lab owned by RuBi and NeO, we found Olivia tied to a chair with a lead in her hand:
 
     </b></h4> 
@@ -120,7 +121,7 @@
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  Okay Olivia, no problem. Just calm down we will take you back safely.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 6:
-                box.innerHTML = '<div class="col-8 mb-5"><div class="rectangle-right">We opened the note that we found in Olivia’s hand.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Next</a> </div><div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div>';
+                box.innerHTML = '<div class="col-8 mb-5"><div class="rectangle-right">We opened the note that we found in Olivia’s hand.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Case</a> </div><div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div>';
                 break;
            
            

@@ -39,9 +39,7 @@
                 <div class="col-11">
                     <h1>Introduction & Rules</h1>
                 </div>
-                <div class="column">
-                    <a href="../Conversations/conversation.php" type="button" class="btn btn-dark align-self-right">Start</a>
-                </div>
+                
             </div>
             <div class="row">
                 <div class="col-5">
@@ -53,23 +51,26 @@
                 <div class="col-6">
                     <p>
                         
-                        Initially, you will be credited with 15 points.<br><br>
+                        Initially, you will be credited with <b>15</b> points.<br><br>
 
-                        Taking up a hint will cost you 10 points. As you proceed to the next round the value of hints will increase subsequently by 2 points.<br><br>
+                        Taking up a hint will cost you <b>10</b> points. As you proceed to the next round the value of hints will increase subsequently by <b>2</b> points.<br><br>
 
-                        For eg- If you are taking a hint in the 1st round 10 points will be deducted, for the 2nd round 12 points, for the 3rd round 14 points and so on.<br><br>
+                        For eg- If you are taking a hint in the 1st round <b>10</b> points will be deducted, for the 2nd round <b>12</b> points, for the 3rd round <b>14</b> points and so on.<br><br>
 
-                        A maximum of 9  points will be credited for each round.<br><br>
+                        A maximum of <b>9</b> points will be credited for each round.<br><br>
 
-                        With every incorrect attempt 2 points will be deducted.<br><br>
+                        With every incorrect attempt <b>2</b> points will be deducted.<br><br>
 
-                        For eg- For the  first correct attempt you will be awarded with 9 points, for the second correct attempt 8 points, for the third 6 points and from fourth onwards 3 points.<br><br>
+                        For eg- For the  first correct attempt you will be awarded with <b>9</b> points, for the second correct attempt <b>8</b> points, for the third <b>6</b> points and from fourth onwards <b>3</b> points.<br><br>
 
-                        You will be credited with a minimum of 3  points for passing each round.<br><br>
+                        You will be credited with a minimum of <b>3</b> points for passing each round.<br><br>
 
                         If the player has gone negative points then no hints are allowed.<br><br>
 
                     </p>
+                    <div class="">
+                        <a href="../Conversations/conversation.php" type="button" class="btn btn-success mx-auto">Start</a>
+                    </div>
                 </div>
             </div>
         </div>
