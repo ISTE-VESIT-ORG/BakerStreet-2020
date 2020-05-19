@@ -14,6 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>221B Baker Street-Leaderboard</title>
 </head>
+<style>
+    .container{
+        margin-bottom:100px;
+        height:80%;
+    }
+    .component{
+        height:90%;
+    }
+</style>
 <body style="background-image: url('../Images/Leaderboard.jpg'); ">
     
     <!--Header-->
@@ -21,7 +30,7 @@
 
     <div class="container">
         <div class="justify-content-center h-100 mt-5" >
-            <div class="card text-white" style="background-color: rgba(0,0,0,0.75); height: 450px">
+            <div class="card text-white" style="background-color: rgba(0,0,0,0.75); height: 530px;overflow-y:scroll;">
               <div class="card-header mx-auto">
                 <h3>Leaderboard</h3>
               </div>
