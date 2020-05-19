@@ -167,11 +167,11 @@
                 case 13:
                 box.innerHTML = '<div class="col-4" style="align-items:left"><img src="../Images/Carl.png" alt=""class="try"  ><h2>Carl</h2></div><div class="col-8"><div class="rectangle-left">We had a fight recently, I think it went missing since then.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
-                  case 6:
+                  case 14:
                 box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png "class="try" alt=""class="try" ><h2>herlock</h2></div><div class="col-8"><div class="rectangle-left"> I started searching the house, I found Carl’s personal diary. Carl had a very abnormal handwriting which was difficult to understand. There was something written about Andrea getting more money. We assumed someone might have given money to Andrea to kill Jorge Manley.  </div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                
-                case 14:
+                case 15:
                 box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Suddenly we received a call from Hotel Caesars Palace and we were informed about a crime scene in their hotel. We reached the crime scene as soon as possible.</div><br><button class="btn btn-info button" onclick="back();">Back</button> <a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a></div>'
                 break;
                  
