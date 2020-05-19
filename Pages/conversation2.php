@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+  <title>221B Baker Street-Conversation3</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -58,7 +58,11 @@
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+<?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -109,7 +113,7 @@
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">   I know John, but now clearly we have to escape. I noticed some footprints in the lawn, looked gigantic. It was cold outside,so I couldn’t see much because I wore glasses and it was fogged on the inside. </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                  case 6:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">As soon as we escaped, I received an SMS, it said:</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">As soon as we escaped, I received an SMS, it said:</div><br><button class="btn btn-info button" onclick="back();">back</button> ></div><div class="col-1"></div>'
                 break;
            
             }          

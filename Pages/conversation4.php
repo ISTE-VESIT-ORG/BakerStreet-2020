@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+  <title>221B Baker Street-Conversation5</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -58,7 +58,13 @@
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+ <?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
+
+
   <br>
     <br>
     <br>
@@ -133,7 +139,7 @@
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlockh2></div><div class="col-8"><div class="rectangle-left">  -By the way, Where is Olivia?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 14:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">(Screaming)Sherlockkk! You need to look at this.  </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/Lestrade.png" alt=""width="80%" height="80%" ><h2>Lestrade</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">(Screaming)Sherlockkk! You need to look at this.  </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> </div><div class="col-4"><img src="../images/Lestrade.png" alt=""width="80%" height="80%" ><h2>Lestrade</h2></div>';
                 break;
            
             }          

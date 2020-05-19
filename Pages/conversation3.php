@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+ <title>221B Baker Street-Conversation4</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -58,7 +58,11 @@
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+<?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -121,7 +125,7 @@
                 box.innerHTML = '<div class="col-8"><div class="rectangle-right">I started searching the house,I found Carls personal diary.Carl had a very abnormal handwriting which was difficult to understand.There was something written about Andrea getting more money.We assumed someone might have given money to Andrea to kill Jorge Manley.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div>';
                 break;
                 case 10:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Suddenly we received a call from Hotel Caesars Palace and we were informed about a crime scene in their hotel. We reached the crime scene as soon as possible.</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Suddenly we received a call from Hotel Caesars Palace and we were informed about a crime scene in their hotel. We reached the crime scene as soon as possible.</div><br><button class="btn btn-info button" onclick="back();">back</button> </div>'
                 break;
                  
            

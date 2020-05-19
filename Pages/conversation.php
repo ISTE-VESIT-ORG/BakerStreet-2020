@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+   <title>221B Baker Street-Conversation</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -63,10 +63,15 @@
  height:80%;
  width:80%;
 }
+
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+ <?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -75,7 +80,7 @@
     <div class="container try">
         <div class="row">
             <div class="col-1"></div>
-            <div id="dialogue-box" class="col-10 row">
+            <div id="dialogue-box" class="col-10 row" >
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos perspiciatis ipsa obcaecati quisquam architecto autem sequi beatae aliquam illum. Consectetur dolorum, corporis esse possimus pariatur commodi eos minima necessitatibus?
                 </p> 
@@ -159,7 +164,7 @@
                 box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Yet one important guest who was supposed to be at the wedding, didn’t appear. Mr. Schlansky, John’s old friend, worked together at the military service.</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
                 break;
             case 19:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">My brother, Mycroft Holmes.<br>Mycroft Holmes is older to me by seven years. He is the British Government when he"s not too busy being the British Secret Service or the CIA on a freelance basis.</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">My brother, Mycroft Holmes.<br>Mycroft Holmes is older to me by seven years. He is the British Government when he"s not too busy being the British Secret Service or the CIA on a freelance basis.</div><br><button class="btn btn-info button" onclick="back();">back</button> </div><div class="col-1"></div>'
                 break;
             }          
         }

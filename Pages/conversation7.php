@@ -5,7 +5,7 @@
    <title>FE-Quiz_Home</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <title>221B Baker Street-Conversation8</title>
     <!-- bootstrap 4 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -58,7 +58,11 @@
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+ <?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -111,7 +115,7 @@
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  Okay Olivia, no problem. Just calm down we will take you back safely.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 6:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We opened the note that we found in Olivia’s hand.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We opened the note that we found in Olivia’s hand.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> </div><div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div>';
                 break;
            
            

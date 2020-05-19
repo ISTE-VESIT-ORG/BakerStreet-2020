@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+    <title>221B Baker Street-Conversation6</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -57,8 +57,11 @@
         }
     </style>
 </head>
-<body>
-  <?php include '../Components/header.php'?>
+<?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -100,7 +103,7 @@
                 box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Okay Sherlock, we are flatmates, right? When I moved in you showed me a skull and addressed it as your friend. Did you mean it? </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt="" ><h2>John</h2></div>';
                 break;
              case 3:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">There was no contact number listed so we just waited for that porcelain clock on the wall to proclaim the time as ELEVEN.We received the call.A recorded audio was played...</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">There was no contact number listed so we just waited for that porcelain clock on the wall to proclaim the time as ELEVEN.We received the call.A recorded audio was played...</div><br><button class="btn btn-info button" onclick="back();">back</button> </div><div class="col-1"></div>'
                 break;
            
             }          

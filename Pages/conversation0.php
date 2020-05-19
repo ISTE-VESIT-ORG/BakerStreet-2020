@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+   <title>221B Baker Street-Conversation1</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -58,7 +58,11 @@
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+<?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -94,7 +98,7 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><br><br><br><br><br><br><br><br><br></div>';
                 break;
            
             }          

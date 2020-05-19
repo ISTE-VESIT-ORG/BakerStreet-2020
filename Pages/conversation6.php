@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+ <title>221B Baker Street-Conversation7</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -58,7 +58,11 @@
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+<?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -98,7 +102,7 @@
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">We assumed a great network involved. The only way to get Olivia was to visit Italy.After we went to Italy, while exiting from the airport, an officer said, “Welcome to Italy, Sherlock and John”, and gave us this letter:</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">We assumed a great network involved. The only way to get Olivia was to visit Italy.After we went to Italy, while exiting from the airport, an officer said, “Welcome to Italy, Sherlock and John”, and gave us this letter:</div><br><button class="btn btn-info button" onclick="back();">back</button> </div><div class="col-1"></div>'
                 break;
            
             }          

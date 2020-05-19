@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/style1.css">
-   <title>FE-Quiz_Home</title>
+  <title>221B Baker Street-Conversation11</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -58,7 +58,11 @@
     </style>
 </head>
 <body>
-  <?php include '../Components/header.php'?>
+<?php 
+    error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+    session_start(); 
+    include '../Components/header.php';
+?> 
   <br>
     <br>
     <br>
@@ -103,7 +107,7 @@
                 box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">When interrogated he gave us a phone with a recorded audio</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
                 break;
                 case 4:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">“Hello Shelly boy! Welcome to the final round. I have to admit, I feel like this has gone on for too long now and you definitely deserve a rest. But I can’t help but imagine you twitching so hard to get your hands on me given all the pain I have caused you. Hah! I LOVE IT! Don’t worry, Sherlock, even I am excited to meet you after all this, the look on your face will be worth more than gold! Trust me, it will happen and it will be priceless!But for that you have to pull through one LAST round. Be my good boy and finish it!”</div><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">“Hello Shelly boy! Welcome to the final round. I have to admit, I feel like this has gone on for too long now and you definitely deserve a rest. But I can’t help but imagine you twitching so hard to get your hands on me given all the pain I have caused you. Hah! I LOVE IT! Don’t worry, Sherlock, even I am excited to meet you after all this, the look on your face will be worth more than gold! Trust me, it will happen and it will be priceless!But for that you have to pull through one LAST round. Be my good boy and finish it!”</div><br><button class="btn btn-info button" onclick="back();">back</button></div><div class="col-1"></div>'
                 break;
            
             }          
