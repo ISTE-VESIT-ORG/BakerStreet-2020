@@ -43,26 +43,26 @@
     },
     {
         "_id" : "8",
-        "question" : "\u201CI have 2 friends, Scarlett and Erin. Scarlett lies on Mondays, Tuesdays, Wednesdays and Fridays. Whereas Erin lies on Mondays, Tuesdays, Thursdays, Fridays, Sundays.\r\nToday they give the following statements.\r\nScarlett- I lie on Saturdays.\r\nErin- I will lie tomorrow.\r\nScarlett- I'll lie on Sundays as well.\r\nErin:- I will lie the day after tomorrow.\r\n\r\nWhich day is today?\u201D \r\n",
+        "question" : "\u201CI have 2 friends, Scarlett and Erin.<br> Scarlett lies on Mondays, Tuesdays, Wednesdays and Fridays. <br>Whereas Erin lies on Mondays, Tuesdays, Thursdays, Fridays, Sundays.<br>\r\nToday they give the following statements.<br>\r\nScarlett- I lie on Saturdays.\r\nErin- I will lie tomorrow.\r\nScarlett- I'll lie on Sundays as well.\r\nErin:- I will lie the day after tomorrow.\r\n\r\n<br>Which day is today?\u201D \r\n",
         "answer" : "wednesday",
         "hint" : "Find an odd one out."
     },
     {
         "_id" : "9",
-        "question" : "\u201CA group of 5 friends went on an adventure. They decided to climb a mountain.It was a winter evening, they started their journey in extreme cold. Two days later, when they were starting their climb for the day, they found Scarlett's body and she was poisoned. On investigating, Joe told that he was packing the bag. Hamid said he was the last to wake up. Erin told that she was cooking food for all and Winston said that he was mapping their route for the journey\r\nWho is most likely to be the killer?\u201D\r\n",
+        "question" : "\u201CA group of 5 friends went on an adventure. They decided to climb a mountain.It was a winter evening, they started their journey in extreme cold.<br> Two days later, when they were starting their climb for the day, they found Scarlett's body and she was poisoned.<br> On investigating, Joe told that he was packing the bag. <br>Hamid said he was the last to wake up. <br>Erin told that she was cooking food for all and Winston said that he was mapping their route for the journey.<br>\r\nWho is most likely to be the killer?\u201D\r\n",
         "answer" : "Erin",
         "hint" : "Winston said that the last time he saw Scarlett was before breakfast."
     },
     {
         "_id" : "10",
-        "question" : "\u201CFour robbers Leo, Tommy, Harrison & Arlo planned to rob a bank. They entered the bank on a busy morning and sealed all entrances. One hostage was found dead. During the investigation Leo said he was breaking into the locker room. Arlo said he was looting all the cash from the cash desk. Harrison said he was guarding the entrances. Tommy said he was disabling the security cameras and alarms. Who killed the hostage?\u201D",
+        "question" : "\u201CFour robbers Leo, Tommy, Harrison & Arlo planned to rob a bank.<br> They entered the bank on a busy morning and sealed all entrances. One hostage was found dead. During the investigation Leo said he was breaking into the locker room.<br> Arlo said he was looting all the cash from the cash desk. Harrison said he was guarding the entrances. Tommy said he was disabling the security cameras and alarms. <br>Who killed the hostage?\u201D",
         "answer" : "harrison",
         "hint" : "Can someone do something that has already been done?"
     },
     {
         "_id" : "11",
-        "question" : "\u201CHello Shelly boy! Welcome to the final round. \r\nI have to admit, I feel like this has gone on for too long now and you definitely deserve a rest. But I can\u2019t help but imagine you twitching so hard to get your hands on me given all the pain I have caused you. Hah! I LOVE IT! Don\u2019t worry, Sherlock, even I am excited to meet you after all this, the look on your face will be worth more than gold! Trust me, it will happen and it will be priceless!\r\nBut for that you have to pull through one LAST round. Be my good boy and finish it! \r\n\r\nThere\u2019s a donkey murdered with a note on its tail. \r\nNote said \u201CYou would need an eight legged table to solve that.\r\nTake this number you may need it, 150 165 142 145 162 164\u201D\r\nThe only way to get to the murderer is to solve the mystery note.\u201D\r\n",
+        "question" : "\u201CHello Shelly boy! Welcome to the final round. \r\nI have to admit, I feel like this has gone on for too long now and you definitely deserve a rest.<br> But I can\u2019t help but imagine you twitching so hard to get your hands on me given all the pain I have caused you. Hah! I LOVE IT! Don\u2019t worry, Sherlock, even I am excited to meet you after all this, the look on your face will be worth more than gold!<br> Trust me, it will happen and it will be priceless!\r\nBut for that you have to pull through one LAST round. Be my good boy and finish it! \r\n\r\nThere\u2019s a donkey murdered with a note on its tail. \r\nNote said \u201CYou would need an eight legged table to solve that.\r\n<br>Take this number you may need it, 150 165 142 145 162 164.\u201D\r\n<br>The only way to get to the murderer is to solve the mystery note.\u201D\r\n",
         "answer" : "hubert",
-        "hint" : "Donkey is the key."
+        "hint" : "The number 103157144145 is CODE"
     }
 ]
