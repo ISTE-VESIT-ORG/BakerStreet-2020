@@ -24,13 +24,16 @@
         //Port to connect smtp
             $mail->Port = "587";
         //Set gmail username
-            $mail->Username = "developer.adi.kotkar@gmail.com";
+            //$mail->Username = "developer.adi.kotkar@gmail.com";
+            $mail->Username = "events.iste.vesit@gmail.com";
         //Set gmail password
-            $mail->Password = "sxkmrqplsickjcjx";
+            //$mail->Password = "sxkmrqplsickjcjx";
+            $mail->Password = "owmkjwpfkckerluw";
         //Email subject
             $mail->Subject = "OTP for 221B Baker Street";
         //Set sender email
-            $mail->setFrom('developer.adi.kotkar@gmail.com');
+            //$mail->setFrom('developer.adi.kotkar@gmail.com');
+            $mail->setFrom('events.iste.vesit@gmail.com');
         //Enable HTML
             $mail->isHTML(true);
         //Email body
@@ -64,13 +67,16 @@
         //Port to connect smtp
             $mail->Port = "587";
         //Set gmail username
-            $mail->Username = "developer.adi.kotkar@gmail.com";
+            //$mail->Username = "developer.adi.kotkar@gmail.com";
+            $mail->Username = "events.iste.vesit@gmail.com";
         //Set gmail password
-            $mail->Password = "sxkmrqplsickjcjx";
+            //$mail->Password = "sxkmrqplsickjcjx";
+            $mail->Password = "owmkjwpfkckerluw";
         //Email subject
             $mail->Subject = "OTP for 221B Baker Street";
         //Set sender email
-            $mail->setFrom('developer.adi.kotkar@gmail.com');
+            //$mail->setFrom('developer.adi.kotkar@gmail.com');
+            $mail->setFrom('events.iste.vesit@gmail.com');
         //Enable HTML
             $mail->isHTML(true);
         //Email body
