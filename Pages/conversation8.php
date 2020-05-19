@@ -105,7 +105,7 @@
                 box.innerHTML = '<div class="col-8"><div class="rectangle-right"> We sensed something strange about this lead so we asked Olivia about the names.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src=" ../images/john.png " alt=""width="80%" height="80%" ><h2>Jhon</h2></div>';
                 break;
                 case 3:
-                box.innerHTML = '<div class="col-4"><img src="" alt="../images/Olivia.png" width="80%" height="80%"><h2>Olivia</h2></div><div class="col-8"><div class="rectangle-left">  Yes they are my friends in London.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="" alt="../images/o.png" width="80%" height="80%"><h2>Olivia</h2></div><div class="col-8"><div class="rectangle-left">  Yes they are my friends in London.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 4:
                 box.innerHTML = '<div class="col-8"><div class="rectangle-right">  We headed back to London to provide her friends security.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div>';
