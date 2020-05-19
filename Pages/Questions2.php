@@ -80,14 +80,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE-Quiz_Questions</title>
+    <title>221B Baker Street-Questions</title>
 </head>
 <body>
     <!--Header-->
     <?php include '../Components/header.php'; ?>
 
     <!--Content-->
-    <div class="card mx-5">
+    <div class="card mx-5" id="progressCard">
         <div class="card-body row">
             <h4 class="col-3"><?php print $user_info['email']; ?></h4>
             <?php
@@ -97,6 +97,29 @@
                 $progress = round(($current_question/$total_questions)*100);
                 $progress_percentage = $progress."%";
 
+                //bg
+                $image = "../Images/".($_SESSION['progress_count']+1).".jpg";
+                
+                print"  <style>
+                            body{
+                                background-image:url('$image');
+                            }
+                            #progressCard{
+                                color:white;
+                                background-color: rgba(0,0,0,0.75)
+                            }
+                            #questionCard{
+                                width:50%;
+                                margin-left:auto;
+                                margin-right:auto;
+                                margin-bottom:100px;
+                                color:white;
+                                background-color: rgba(0,0,0,0.75)
+                            }
+                            #hint{
+                            }  
+                        </style>";
+
                 print"<div class=\"progress col-6 mx-5 my-auto\">
                             <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: $progress_percentage;\" 
                                 aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">
@@ -104,7 +127,7 @@
                             </div>
                     </div>";
             ?>
-            <a class="btn btn-dark col-1" href="../Backend/logout.php" role="button">Logout</a>
+            <a class="btn btn-dark col-1" href="../Backend/logout.php" role="button">Exit</a>
         </div>
     </div>
 
@@ -120,45 +143,46 @@
         $count = $_SESSION['progress_count'];
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"\">
-                <div class=\"card mx-5 my-5\">
-                    <h3 class=\"card-title mx-5 my-2\"> Question ".($count+1)." </h3>
-                    <div class=\"card-body mx-4\">
+                <div class=\"card mt-0\" id=\"questionCard\">
+                    <h3 class=\"card-title mx-5 mb-2 mt-5 text-center\"> Case ".($count+1)." </h3>
+                    <div class=\"card-body mx-4 text-center\">
                         ".$data[$count]['question']."
                     </div>
-                    <div class=\"input-group mb-3 mx-5 w-50\">
-                        <input type=\"text\" class=\"form-control\" placeholder=\"Answer\" 
+                    <div class=\"input-group mb-3 mx-auto w-50\">
+                        <input type=\"text\" class=\"form-control text-center\" placeholder=\"Answer\" 
                                aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
                                id=\"answer\" name=\"answer\">
                     </div>";
 
                     if(isset($_SESSION['wrongAnswer'])){
-                        print "<div class=\"alert alert-danger mx-5 w-50\" role=\"alert\">
+                        print "<div class=\"alert alert-danger mx-auto align-self-center w-50 text-center\" role=\"alert\">
                                     Invalid Answer! Please Try Again..
                                </div>";
                     }
         
         if($_SESSION['current_points'] <= 0 ){
             if($_SESSION['hint_status']==1){
-                print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
+                print"  <p class=\"align-self-center mx-auto\"><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
                         <div class=\" mx-5 w-50\" id=\"collapseExample\">
                             <div class=\"card card-body\">
                                 ".$data[$count]['hint']."
                             </div>
                         </div>";
             }else if($_SESSION['hint_status']==0){
-                print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>";
+                print"  <p class=\"align-self-center mx-auto\"><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>";
             }
         }
         else if($_SESSION['hint_status']==1){
-            print"  <p><button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
-                    <div class=\" mx-5 w-50\" id=\"collapseExample\">
-                        <div class=\"card card-body\">
+            print"  <p class=\"align-self-center mx-auto\">
+                    <button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
+                    <div class=\" align-self-center mx-auto w-75 text-center\" id=\"collapseExample\">
+                        <div class=\"card card-body text-dark\">
                             ".$data[$count]['hint']."
                         </div>
                     </div>";
         }else{
-            print"           <p>
-                        <button class=\"btn btn-primary mx-5\" type=\"submit\" data-toggle=\"collapse\"
+            print"           <p class=\"align-self-center mx-auto\">
+                        <button class=\"btn btn-primary\" type=\"submit\" data-toggle=\"collapse\"
                                 data-target=\"#collapseExample\" aria-expanded=\"false\" 
                                 aria-controls=\"collapseExample\" id=\"hint\" onclick=\"hintSelected()\">
                             Hint
@@ -171,7 +195,7 @@
                     </div>";
         }
 
-        print       "<div class=\"mx-5 w-50 my-2\">
+        print       "<div class=\"align-self-center mx-auto mt-2 mb-5\">
                         <button type=\"submit\" class=\"btn btn-dark\" 
                                 value=\"Submit\" id=\"submit\" onclick=\"submitForm()\"> 
                             Submit
@@ -182,6 +206,6 @@
         
     ?>
         
-            
+    <?php include '../Components/footer.php';?>        
 </body>
 </html>

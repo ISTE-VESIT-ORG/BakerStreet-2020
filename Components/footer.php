@@ -7,7 +7,7 @@
 
     <div class="fixed-bottom" style="background-color:black">
         <!-- <p class="text-white mt-4 mb-2 text-center"> &copy; 221B Baker Street</p> -->
-        <p class="text-white my-4 text-center"> Contact Us : developer.adi.kotkar@gmail.com</p>
+        <p class="text-white my-4 text-center"> Contact Us : events.iste.vesit@gmail.com</p>
      </div> 
 
     <!--Footer ends-->
