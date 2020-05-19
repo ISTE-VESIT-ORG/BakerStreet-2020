@@ -53,7 +53,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE-Quiz_End</title>
+    <title>221B Baker Street-End</title>
 </head>
 <body style="background-image:url('../Images/Home.jpg');">
     <!--Header-->
