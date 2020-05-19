@@ -103,7 +103,7 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div style="margin-left:40%"><a href="../Backend/timer.php" type="button" class="btn btn-dark">Next</a></div><div class="row"><div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><div style="margin-left:40%"><a href="../Conversations/conversation0.php" type="button" class="btn btn-dark">View your 1st Case</a></div><br><br><br><br><br><br><br><br><br></div></div>';
+                box.innerHTML = '<div style="margin-left:40%"><a href="../Pages/Questions2.php" type="button" class="btn btn-dark">Next</a></div><div class="row"><div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><div style="margin-left:40%"><a href="../Conversations/conversation0.php" type="button" class="btn btn-dark">View your 1st Case</a></div><br><br><br><br><br><br><br><br><br></div></div>';
                 break;
            
             }          
