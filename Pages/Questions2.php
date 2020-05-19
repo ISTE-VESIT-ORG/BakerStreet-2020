@@ -68,9 +68,15 @@
             document.getElementById("hint").disabled = true
         }, 100);
 
-        alert("Points will be deducted if you choose for hint! ")  
+        var r = confirm("Points will be deducted if you choose for hint!");
+        if (r == true) {
+            document.forms['questionForm'].action="../Backend/hint.php";
+        } else {
+            return false
+        }
 
-        document.forms['questionForm'].action="../Backend/hint.php";
+        //alert("Points will be deducted if you choose for hint! ")  
+
         
     }
 </script>

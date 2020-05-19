@@ -1,44 +1,44 @@
 [
     {
         "_id" : "1",
-        "question" : "\u201CShe was weird. She always started her counting from 4. Once her husband asked which day it is, she said Thursday while it was Sunday. One day, after purchasing 4 apples she gave money to the seller for 8 apples. She left a note which reads \"WLIVPSGO\"\r\nWhat did she mean?\u201D\r\n",
+        "question" : "\u201CShe was weird. She always started her counting from 4.<br> Once her husband asked which day it is, she said Thursday while it was Sunday.<br> One day, after purchasing 4 apples she gave money to the seller for 8 apples. <br>She left a note which reads \"WLIVPSGO\"\r\n, What did she mean?\u201D\r\n",
         "answer" : "sherlock",
         "hint" : "4 is the new one"
     },
     {
         "_id" : "2",
-        "question" : "It was another mysterious case of sudden disappearance of Mr. Schlansky. A laptop is found in his office and needs to be accessed in order to get a clue about his whereabouts but it was password protected with a hint as follows:\r\n\r\nTake the 4th pineapple and eat them with the 4th toast. If you don\u2019t guess the password within the 3rd duck, then eat the 1st apricot kept to the side of 1st paper guarded by the 4th tiger.\r\n\r\nCan you help find the password?\r\n\r\n",
+        "question" : "It was another mysterious case of sudden disappearance of Mr. Schlansky.<br> A laptop is found in his office and needs to be accessed in order to get a clue about his whereabouts but it was password protected with a hint as follows:\r\n\r\n<br><b>Take the 4th pineapple and eat them with the 4th toast.</b><br> <b>If you don\u2019t guess the password within the 3rd duck, then eat the 1st apricot kept to the side of 1st paper guarded by the 4th tiger.</b><br>\r\n\r\nCan you help find the password?\r\n\r\n",
         "answer" : "escape",
         "hint" : " A wise man said, “Math is fun”, who knew although being fun, it can take a person to the right PLACE."
     },
     {
         "_id" : "3",
-        "question" : "\u201CJorge Manley, a famous businessman was murdered. Yet no murderer was found. But the cops got witnesses. There were 5 other people in Jorge\u2019s house. The Chef(Jack) said he was preparing breakfast. The Gardener(Jacob) said he was gardening. The Maid(Andrea) was outside cleaning the window as there was fog all over. The Wife(Lisbon) said she was watching TV. And then the grandfather(George) said he was in his wheelchair. Who murdered Jorge Manley?(Name)\u201D\r\n\r\nCan you help find the password?\r\n\r\n",
+        "question" : "\u201CJorge Manley, a famous businessman was murdered. <br>Yet no murderer was found. But the cops got witnesses. <br>There were 5 other people in Jorge\u2019s house. <br>The Chef(Jack) said he was preparing breakfast. <br>The Gardener(Jacob) said he was gardening. <br>The Maid(Andrea) was outside cleaning the window as there was fog all over. <br>The Wife(Lisbon) said she was watching TV. <br>And then the grandfather(George) said he was in his wheelchair.<br> Who murdered Jorge Manley<b> (Name)</b>?\u201D\r\n\r\nCan you help find the password?\r\n\r\n",
         "answer" : "Andrea",
         "hint" : "A murderer always tries to make CLEAR that there is no evidence left behind."
     },
     {
         "_id" : "4",
-        "question" : "\u201CAndrea was found dead in her hotel room. \r\n\r\nIn the room, all the fingerprints had been eliminated with ammonia. The label of the ammonia bottle used to clear the evidence was found which linked to the pharmaceutical company that Carl owned. \r\n\r\nThere was a handwritten Note which said, \"She deserved this.\" in a neat handwriting. \r\nA piece of torn cloth was found which turned out to be Carl's. This was an indication that there had been a struggle, however, there was no other evidence to support this cause. \r\n\r\nFurther investigation revealed that Carl suffered feats of aggression. \r\n\r\nAndrea was a troubled woman and had attempted suicide in the past. Carl used to lash out by beating her. The police concluded that this was a case of suicide made to look like murder.\r\nWhat piece of evidence gave it away?\u201D\r\n",
+        "question" : "\u201CAndrea was found dead in her hotel room. <br>\r\n\r\nIn the room, all the fingerprints had been eliminated with ammonia. <br>The label of the ammonia bottle used to clear the evidence was found which linked to the pharmaceutical company that Carl owned.<br> \r\n\r\nThere was a handwritten Note which said, \"She deserved this.\" in a neat handwriting.<br> \r\nA piece of torn cloth was found which turned out to be Carl's.<br> This was an indication that there had been a struggle, however, there was no other evidence to support this cause. <br>\r\n\r\nFurther investigation revealed that Carl suffered feats of aggression. <br>\r\n\r\nAndrea was a troubled woman and had attempted suicide in the past. <br>Carl used to lash out by beating her.<br> The police concluded that this was a case of suicide made to look like murder.<br>\r\nWhat piece of evidence gave it away?\u201D\r\n",
         "answer" : "note",
         "hint" : "The clue is in Carl’s condition"
     },
     {
         "_id" : "5",
-        "question" : "\u201CCarl\u2019s 13 yrs old daughter Olivia, disappeared from the bedroom. In the bathroom, there was a glass in front of the mirror and a bathtub filled with water below it .They wrote on the glass that this may help us to reach the daughter-  \u201Ccall me at u3^373  - S.H.\u201D. What did they mean?\u201D\r\n",
+        "question" : "\u201CCarl\u2019s 13 yrs old daughter Olivia, disappeared from the bedroom. In the bathroom, there was a glass in front of the mirror and a bathtub filled with water below it .<br>They wrote on the glass that this may help us to reach the daughter-  <br>\u201Ccall me at u3^373  - S.H.\u201D. <br>What did they mean?\u201D\r\n",
         "answer" : "eleven",
         "hint" : "\u201CTo find Olivia one doesn\u2019t need help .\r\n      All must do is look to oneself\u201D\r\n"
     },
     {
         "_id" : "6",
-        "question" : "Two archaeologists standing on the Greenwich meridian wanted to meet their undercover friend for help. They wanted to meet him but he couldn\u2019t share his address directly. So he made a puzzle for them to solve which would lead to the country he is in.\r\n\r\nHe sent both of them to a warehouse where they found the address to two different warehouses. One was towards the north and hthe other was towards the east.\r\nBoth of them decided to split and go to those warehouses.\r\nOne who went to the north found a letter with a mathematical question in it\r\n\r\nQuestion:\r\n\r\nThe triangle ABC  has sides a=5, b=18.76, and c=15.398 find angle C.\r\n\r\nOther who went to the east found the same question but had to find the angle A\r\n\r\nAfter solving the problem, both of them met and thought about the clues that were given and were successful to find the country hidden in it.\r\n\r\nFind the country and meet Olivia\r\n-With love S.H.\r\n",
+        "question" : "Two archaeologists standing on the Greenwich meridian wanted to meet their undercover friend for help. They wanted to meet him but he couldn\u2019t share his address directly. So he made a puzzle for them to solve which would lead to the country he is in.\r\n\r\nHe sent both of them to a warehouse where they found the address to two different warehouses. One was towards the north and hthe other was towards the east.\r\nBoth of them decided to split and go to those warehouses.<br>\r\nOne who went to the north found a letter with a mathematical question in it\r\n\r\nQuestion:\r\n\r\nThe triangle ABC  has sides a=5, b=18.76, and c=15.398 find angle C.<br>\r\n\r\nOther who went to the east found the same question but had to find the angle A <br>\r\n\r\nAfter solving the problem, both of them met and thought about the clues that were given and were successful to find the country hidden in it.\r\n\r\n<br>Find the country and meet Olivia\r\n-With love S.H.\r\n",
         "answer" : "Italy",
         "hint" : "Not only the degrees of the angle but also the direction is required to find the location."
     },
     {
         "_id" : "7",
-        "question" : "\u201CHello Sherlock and John. Actually, I don\u2019t feel like giving the daughter right away. Solve this puzzle...\r\n\u2018A chemistry teacher was murdered soon after his last lecture, Wednesday evening.\r\nA note was found which read \u2192  044.083.010.008.\r\nBreak the code and find the names of two murderers\u2019 \u201D\r\n",
-        "answer" : "RuBi,NeO",
+        "question" : "\u201CHello Sherlock and John. Actually, I don\u2019t feel like giving the daughter right away. <br>Solve this puzzle...\r\n\u2018A chemistry teacher was murdered soon after his last lecture, Wednesday evening.\r\nA note was found which read \u2192  044.083.010.008.<br>\r\nBreak the code and find the names of two murderers\u2019 \u201D\r\n<br><b>Note : Answer Format-(first_murderer space second_murderer) </b>",
+        "answer" : "RuBi NeO",
         "hint" : "It is a table without legs."
     },
     {
