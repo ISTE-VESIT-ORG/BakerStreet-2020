@@ -79,7 +79,7 @@
             
             <div id="dialogue-box" class="col-12 row">
             <h4 class="ml-5"><b>
-                   Let's move to the next Case
+                   Let's move to the next Scene
             </b></h4>
                 <button class="btn btn-success" onclick="change();" style=" position:relative ;left: 45%;">Start</button>
             </div>
