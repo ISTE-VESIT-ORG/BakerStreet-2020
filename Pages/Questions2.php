@@ -89,7 +89,7 @@
     <!--Content-->
     <div class="card mx-5" id="progressCard">
         <div class="card-body row">
-            <h4 class="col-3"><?php print $user_info['email']; ?></h4>
+            <h4 class="col-4"><?php print $user_info['email']; ?></h4>
             <?php
                 $current_question = (int)$user_info['progress_count'];
                 $total_questions = (int)sizeof($data);

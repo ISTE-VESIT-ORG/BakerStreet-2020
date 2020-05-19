@@ -11,5 +11,6 @@
     $_SESSION['incorrect_attempts_count'] = (int)$user_info['incorrect_attempts_count'];
 
     $conversation = "conversation".$_SESSION['progress'];
-    // header('location: ../Conversations/'.$conversation.'.php');
+    header('location: ../Pages/Questions2.php')
+    //header('location: ../Conversations/'.$conversation.'.php');
 ?>
