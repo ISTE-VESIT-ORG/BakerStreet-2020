@@ -69,12 +69,6 @@
                   <input type="email" required autocomplete="off" name="email" class="form-control" placeholder="Email ID">
                   
                 </div>
-                <!-- <div class="input-group form-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fas fa-key"></i></span>
-                  </div>
-                  <input type="password" class="form-control" placeholder="">
-                </div> -->
                 <div class="form-group ">
                   <input type="submit" id="requestOTP" value="Send OTP" class="btn login_btn btn-warning">
                 </div>
