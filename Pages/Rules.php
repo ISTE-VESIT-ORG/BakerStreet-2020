@@ -35,11 +35,18 @@
     <!--Content-->
     <div class="card mx-5 mt-5" id="card">
         <div class="card-body">
-            <h1>Introduction & Rules</h1>
+            <div class="row">
+                <div class="col-11">
+                    <h1>Introduction & Rules</h1>
+                </div>
+                <div class="column">
+                    <a href="../Conversations/conversation.php" type="button" class="btn btn-dark align-self-right">Start</a>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-5">
                     <video class="w-100" controls>
-                        <source src="" type="video/mp4">
+                        <source src="../Videos/s2.mp4" type="video/mp4">
                         Your browser does not support HTML video.
                     </video>
                 </div>
@@ -63,7 +70,6 @@
                         If the player has gone negative points then no hints are allowed.<br><br>
 
                     </p>
-                    <a href="../Backend/timer.php" type="button" class="btn btn-dark">Start</a>
                 </div>
             </div>
         </div>

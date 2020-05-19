@@ -55,6 +55,12 @@
             position: relative;
             float: bottom;
         }
+        body{
+            background-image:url('../Images/1.jpg')
+        }
+        #card{
+            /* margin-bottom:300px; */
+        }
     </style>
 </head>
 <body>
@@ -63,18 +69,18 @@
     session_start(); 
     include '../Components/header.php';
 ?> 
+    
   <br>
     <br>
     <br>
     <br>
     <br>
-    <div class="container">
+    <div class="container" id="card">
         <div class="row">
-            
             <div id="dialogue-box" class="col-12 row">
-                <p>
-                   Let's go to next Question
-                </p> 
+                <h4 class="ml-5"><b>
+                   Let's move to your first Case
+            </b></h4> 
                 <button class="btn btn-success" onclick="change();" style=" position:relative ;left: 45%;">Start</button>
             </div>
       
@@ -98,7 +104,7 @@
         function render(i){
             switch(i) {
             case 1:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><br><br><br><br><br><br><br><br><br></div>';
+                box.innerHTML = '<div style="margin-left:40%"><a href="../Backend/timer.php" type="button" class="btn btn-dark">Next</a></div><div class="row"><div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><div style="margin-left:40%"><a href="../Conversations/conversation0.php" type="button" class="btn btn-dark">View your 1st Case</a></div><br><br><br><br><br><br><br><br><br></div></div>';
                 break;
            
             }          

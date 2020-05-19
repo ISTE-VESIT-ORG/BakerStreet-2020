@@ -55,6 +55,12 @@
             position: relative;
             float: bottom;
         }
+        body{
+            background-image:url('../Images/3.jpg')
+        }
+        #card{
+            margin-bottom:100px;
+        }
     </style>
 </head>
 <body>
@@ -72,9 +78,9 @@
         <div class="row">
             
             <div id="dialogue-box" class="col-12 row">
-                <p>
-                   Let's go to next Question
-                </p> 
+            <h4 class="ml-5"><b>
+                   Let's move to the next Case
+            </b></h4> 
                 <button class="btn btn-success" onclick="change();" style=" position:relative ;left: 45%;">Start</button>
             </div>
       
@@ -113,7 +119,7 @@
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">   I know John, but now clearly we have to escape. I noticed some footprints in the lawn, looked gigantic. It was cold outside,so I couldn’t see much because I wore glasses and it was fogged on the inside. </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                  case 6:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">As soon as we escaped, I received an SMS, it said:</div><br><button class="btn btn-info button" onclick="back();">back</button> ></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="row"><div class="col-1"></div><div class="col-10"><div class="rectangle-center">As soon as we escaped, I received an SMS, it said:</div><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Next</a></div><div class="col-1"></div></div>'
                 break;
            
             }          

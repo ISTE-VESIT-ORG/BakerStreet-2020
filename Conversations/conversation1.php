@@ -55,6 +55,12 @@
             position: relative;
             float: bottom;
         }
+        body{
+            background-image:url('../Images/2.jpg')
+        }
+        #card{
+            margin-bottom:100px;
+        }
     </style>
 </head>
 <body>
@@ -68,13 +74,13 @@
     <br>
     <br>
     <br>
-    <div class="container">
+    <div class="container" id="card">
         <div class="row">
             
             <div id="dialogue-box" class="col-12 row">
-                <p>
-                   Let's go to next Question
-                </p> 
+            <h4 class="ml-5"><b>
+                   Let's move to the next Case
+            </b></h4> 
                 <button class="btn btn-success" onclick="change();" style=" position:relative ;left: 45%;">Start</button>
             </div>
       
@@ -104,7 +110,7 @@
                 box.innerHTML = '<div class="col-8"><div class="rectangle-right">Mr. Schlansky? He wasinvited to the wedding.He didnt show up.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../images/john.png" alt="" ><h2>John</h2></div>';
                 break;
             case 3:
-                box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Maybe something has happened to him.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button></div>';
+                box.innerHTML = '<div style="margin-left:60%"><a href="../Pages/Questions2.php" type="button" class="btn btn-dark">Next</a></div><div class="row"><div class="col-4"><img src="../images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Maybe something has happened to him.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button></div></div>';
                 break;
            
             }          

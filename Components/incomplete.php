@@ -6,7 +6,7 @@
     <?php include '../Components/header.php'?>
 
     <!--Error-->
-    <div class="jumbotron jumbotron-fluid mx-5 my-5">
+    <div class="jumbotron jumbotron-fluid mx-5 my-5 text-white" style="background-color: rgba(0,0,0,0.75) ">
         <div class="container">
             <h1 class="display-4">Error : <b>Incomplete Quiz</b></h1>
             <p class="lead">Something went wrong.</p>

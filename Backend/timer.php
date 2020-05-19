@@ -10,7 +10,11 @@
     $_SESSION['current_points'] = (int)$user_info['points'];
     $_SESSION['incorrect_attempts_count'] = (int)$user_info['incorrect_attempts_count'];
 
+    if($_SESSION['progress']==11){
+        header('location: ../Pages/Questions2.php');
+        return ;
+    }
+
     $conversation = "conversation".$_SESSION['progress'];
-    header('location: ../Pages/Questions2.php')
-    //header('location: ../Conversations/'.$conversation.'.php');
+    header('location: ../Conversations/'.$conversation.'.php');
 ?>

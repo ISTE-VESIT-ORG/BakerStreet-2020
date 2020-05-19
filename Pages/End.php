@@ -21,7 +21,7 @@
             return ;
         }
 
-        function getHoursMinutes($seconds, $format = '%02d:%02d:%02d') {
+        function getHoursMinutes2($seconds, $format = '%02d:%02d:%02d') {
 
             if (empty($seconds) || ! is_numeric($seconds)) {
                 return false;
@@ -35,6 +35,19 @@
             return sprintf($format, $hours, $remainMinutes, $remainSeconds);
         }
 ?>
+<style>
+    #card{
+        color:white;
+        height: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.75) !important;
+    }
+    /* #list{
+        background-color: rgba(0,0,0,0.75) !important;
+    } */
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,18 +55,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FE-Quiz_End</title>
 </head>
-<body>
+<body style="background-image:url('../Images/Home.jpg');">
     <!--Header-->
     <?php include '../Components/header.php'?>
 
     <!--Content-->
-    <div class="card mx-5 mt-5 w-50">
+    <div class="card mx-5 mt-5 w-50" id="card">
         <div class="card-body">
             <h1>Congratulations</h1>
-            <ul class="list-group my-5 w-50">
+            <ul class="list-group my-5 w-50 text-dark">
                 <?php
                     $time_taken = $user_info['time_end'] - $user_info['time_start'];
-                    $time =  getHoursMinutes($time_taken);
+                    $time =  getHoursMinutes2($time_taken);
 
                     print"  <li class=\"list-group-item\"><b>Points: </b>".$user_info['points']."</li>
                             <li class=\"list-group-item\"><b>Incorrect Attempts: </b>".$user_info['incorrect_attempts']."</li>

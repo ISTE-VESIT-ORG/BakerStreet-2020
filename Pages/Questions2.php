@@ -134,16 +134,16 @@
     <!--Questions Content-->
     <?php 
 
-        echo "points before this question: ".$_SESSION['current_points']."<br>";
-        echo "current points: ".(int)$user_info['points']."<br>";
-        echo "incorrect_attempts for this question: ".$_SESSION['incorrect_attempts_count']."<br>";
-        echo "total incorrect_attempts: ".$_SESSION['attempts']."<br>";
-        echo "Hint Status: ".$_SESSION['hint_status'];
+        // echo "points before this question: ".$_SESSION['current_points']."<br>";
+        // echo "current points: ".(int)$user_info['points']."<br>";
+        // echo "incorrect_attempts for this question: ".$_SESSION['incorrect_attempts_count']."<br>";
+        // echo "total incorrect_attempts: ".$_SESSION['attempts']."<br>";
+        // echo "Hint Status: ".$_SESSION['hint_status'];
    
         $count = $_SESSION['progress_count'];
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"\">
-                <div class=\"card mt-0\" id=\"questionCard\">
+                <div class=\"card mt-2\" id=\"questionCard\">
                     <h3 class=\"card-title mx-5 mb-2 mt-5 text-center\"> Case ".($count+1)." </h3>
                     <div class=\"card-body mx-4 text-center\">
                         ".$data[$count]['question']."
@@ -151,7 +151,7 @@
                     <div class=\"input-group mb-3 mx-auto w-50\">
                         <input type=\"text\" class=\"form-control text-center\" placeholder=\"Answer\" 
                                aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
-                               id=\"answer\" name=\"answer\">
+                               id=\"answer\" autoComplete=\"off\" name=\"answer\">
                     </div>";
 
                     if(isset($_SESSION['wrongAnswer'])){

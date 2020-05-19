@@ -55,6 +55,9 @@
             position: relative;
             float: bottom;
         }
+        body{
+            background-image:url('../Images/Home.jpg')
+        }
       
 
 
@@ -78,6 +81,9 @@
     <br>
     <br>
     <div class="container try">
+        <div style="margin-left:40%">
+            <a href="../Conversations/conversation0.php" type="button" class="btn btn-dark">View your 1st Case</a>
+        </div>
         <div class="row">
             <div class="col-1"></div>
             <div id="dialogue-box" class="col-10 row" >

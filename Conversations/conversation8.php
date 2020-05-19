@@ -54,6 +54,12 @@
             position: relative;
             float: bottom;
         }
+        body{
+            background-image:url('../Images/9.jpg')
+        }
+        #card{
+            margin-bottom:100px;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +67,7 @@
     error_reporting(E_ERROR | E_WARNING | E_PARSE); 
     session_start(); 
     include '../Components/header.php';
-?>  <?php include '../Components/header.php'?>
+?>  
   <br>
     <br>
     <br>
@@ -71,10 +77,9 @@
         <div class="row">
             
             <div id="dialogue-box" class="col-12 row">
-                <p>
-                  Let's gp tp next mistry
-
-                </p> 
+            <h4 class="ml-5"><b>
+                   Let's move to the next Case
+            </b></h4>
                 <button class="btn btn-success" onclick="change();" style=" position:relative ;left: 45%;">Start</button>
             </div>
       
@@ -114,7 +119,7 @@
                 box.innerHTML = '<div class="col-4"><img src="../images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  We arranged a foster home for Olivia with the help of my brother Mycroft.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 6:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We were then informed that Erin and Scarlett went on a trek trip with their friends.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button> </div><div class="col-4"><img src="../images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We were then informed that Erin and Scarlett went on a trek trip with their friends.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Next</a> </div><div class="col-4"><img src="../images/john.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
                 break;
            
            
