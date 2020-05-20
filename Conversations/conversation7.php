@@ -133,7 +133,7 @@
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Thank you so much. I was so scared that I couldn’t think of anything.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/O.png" alt="" width="80%" height="80%"><h2>Olivia</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Thank you so much. I was so scared that I couldn’t think of anything.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/o1.png" alt="" width="80%" height="80%"><h2>Olivia</h2></div>';
                 break;
                 case 3:
                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Can you describe your kidnapper?</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button</div>';
