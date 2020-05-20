@@ -111,7 +111,7 @@
                         <br>
                         <b>Points System</b>
                         <ol>
-                            <li>Initially, you will be credited with 10 points.</li>
+                            <li>Initially, you will be credited with 15 points.</li>
                             <li>
                                 Taking up your first hint will cost you 10 points. The values of the hints will increase by 2 points for the next hint after every 1 hint taken.
                                 <br>
