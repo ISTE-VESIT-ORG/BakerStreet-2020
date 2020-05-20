@@ -21,26 +21,26 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end mr-5" id="basicExampleNav">
     <ul class="navbar-nav ">
-      <li class="nav-item mx-3">
+      <li class="nav-item mx-2">
         <a class="nav-link" href="../Pages/Home.php">Home</a>
       </li>
       <?php
               error_reporting(E_ERROR | E_WARNING | E_PARSE);
               session_start();
               if(isset($_SESSION['progress'])){
-                  print"<li class=\"nav-item\">
+                  print"<li class=\"nav-item mx-2\">
                           <a class=\"nav-link\" href=\"../Backend/timer.php\">Current Scene<span class=\"sr-only\">(current)</span></a>
                         </li>";
               }
           ?>
-      <li class="nav-item mx-3">
+      <li class="nav-item mx-2">
         <a class="nav-link" href="../Pages/Leaderboard.php">Leaderboard</a>
       </li>
       <?php
               error_reporting(E_ERROR | E_WARNING | E_PARSE);
               session_start();
               if(isset($_SESSION['email'])){
-                  print"<li class=\"nav-item\">
+                  print"<li class=\"nav-item mx-2\">
                           <a class=\"nav-link\" href=\"../Backend/logout.php\">Logout<span class=\"sr-only\">(current)</span></a>
                         </li>";
               }
@@ -49,8 +49,8 @@
               error_reporting(E_ERROR | E_WARNING | E_PARSE);
               session_start();
               if(isset($_SESSION['progress'])){
-                  print"<li class=\"nav-item\">
-                          <h3><span class=\"badge badge-secondary ml-3\">".$_SESSION['points']."</span></h3>
+                  print"<li class=\"nav-item ml-2\">
+                          <h3><span class=\"badge badge-secondary ml-3\">Points: ".$_SESSION['points']."</span></h3>
                         </li>";
               }
           ?>

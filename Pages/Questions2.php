@@ -80,7 +80,47 @@
         
     }
 </script>
+<script>
+    function myFunction(x) {
+        if (x.matches) { 
+            // If media query matches
+            document.getElementById('progressCard').className = "card mx-3"
+            document.getElementById('emailHead').className = "row mx-auto text-center mb-3 w-100";
+            document.getElementById('emailHead').style.fontSize = "18px";
+            document.getElementById('progressBar').className = "progress row mx-3 mb-3 w-100";
+            document.getElementById('exitButton').className = "btn btn-dark row mb-3 mx-auto";
+            document.getElementById('pointsBadge').className = "row w-100 justify-content-center my-auto visible";
 
+            document.getElementById('questionCard').className = "card mt-2";
+            document.getElementById('questionCard').style.width = "90%"
+            document.getElementById('answerDiv').className = "input-group mb-3 mx-auto w-75"
+            document.getElementById('wrongAnswer').className = "alert alert-danger mx-auto align-self-center w-75 text-center";
+        }
+    }
+
+    function myFunction2(y) {
+        if (y.matches) { 
+            // If media query matches
+            document.getElementById('progressCard').className = "card mx-3"
+            document.getElementById('emailHead').className = "col-4";
+            document.getElementById('progressBar').className = "progress col-6 mx-5 my-auto";
+            document.getElementById('exitButton').className = "btn btn-dark col-1";
+
+            document.getElementById('questionCard').className = "card mt-2";
+            document.getElementById('answerDiv').className = "align-self-center mx-auto mt-2 mb-3"
+            document.getElementById('wrongAnswer').className = "alert alert-danger mx-auto align-self-center w-50 text-center";
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 768px)")
+    var y = window.matchMedia("(max-width: 992px)")
+
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+    myFunction2(y) // Call listener function at run time
+    y.addListener(myFunction)
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +135,7 @@
     <!--Content-->
     <div class="card mx-5" id="progressCard">
         <div class="card-body row">
-            <h4 class="col-4"><?php print $user_info['email']; ?></h4>
+            <h4 class="col-4" id="emailHead"><?php print $user_info['email']; ?></h4>
             <?php
                 $current_question = (int)$user_info['progress_count'];
                 $total_questions = (int)sizeof($data);
@@ -126,14 +166,17 @@
                             }  
                         </style>";
 
-                print"<div class=\"progress col-6 mx-5 my-auto\">
+                print"<div class=\"progress col-6 mx-5 my-auto\" id=\"progressBar\">
                             <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: $progress_percentage;\" 
                                 aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">
                                 ".$progress."%
                             </div>
                     </div>";
             ?>
-            <a class="btn btn-dark col-1" href="../Backend/logout.php" role="button">Exit</a>
+            <a class="btn btn-dark col-1" id="exitButton" href="../Backend/logout.php" role="button">Exit</a>
+            <div class="row w-100 justify-content-center invisible" id="pointsBadge">
+                <h3><span class="badge badge-secondary ml-3">Points: <?php echo $_SESSION['points']?></span></h3>
+            </div>
         </div>
     </div>
 
@@ -154,14 +197,14 @@
                     <div class=\"card-body mx-4 text-center\">
                         <p style=\"font-size: 17px\">".$data[$count]['question']."</p>
                     </div>
-                    <div class=\"input-group mb-3 mx-auto w-50\">
+                    <div class=\"input-group mb-3 mx-auto w-50\" id=\"answerDiv\">
                         <input type=\"text\" class=\"form-control text-center\" placeholder=\"Answer\" 
                                aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
                                id=\"answer\" autoComplete=\"off\" name=\"answer\">
                     </div>";
 
                     if(isset($_SESSION['wrongAnswer'])){
-                        print "<div class=\"alert alert-danger mx-auto align-self-center w-50 text-center\" role=\"alert\">
+                        print "<div id=\"wrongAnswer\" class=\"alert alert-danger mx-auto align-self-center w-50 text-center\" role=\"alert\">
                                     Invalid Answer! Please Try Again..
                                </div>";
                     }
@@ -191,7 +234,7 @@
             print"  <p class=\"align-self-center mx-auto\">
                     <button class=\"btn btn-primary mx-5\" disabled>Hint</button></p>      
                     <div class=\" align-self-center mx-auto w-75 text-center\" id=\"collapseExample\">
-                        <div class=\"card card-body text-dark mb-5\">
+                        <div class=\"card card-body text-dark mb-5\" id=\"collapseExample\">
                             ".$data[$count]['hint']."
                         </div>
                     </div>";
