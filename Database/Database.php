@@ -27,7 +27,7 @@ require '../vendor/autoload.php';
 //Database Connection
 function connectDB(){
     $client = new MongoDB\Client(
-        'mongodb+srv://ADI-KOTKAR:base1234@cluster0-vicgr.mongodb.net/test?retryWrites=true&w=majority');
+        'mongodb+srv://ADI-KOTKAR:<password>@cluster0-vicgr.mongodb.net/test?retryWrites=true&w=majority');
     $db = $client->ISTE_Quiz;
     $collection = $db->user_info;
     
@@ -253,6 +253,10 @@ function sortLeaderboard(){
     $collection = connectDB();
 
     $cursor = $collection->aggregate([
+        ['$match' => [
+            //'email' => $email
+            'points' => ['$gte' => 108]
+        ]],
         ['$addFields' => [
             'time_taken' => ['$subtract' => ['$time_end','$time_start'] ]
         ]],
@@ -266,5 +270,8 @@ function sortLeaderboard(){
     ]);
 
     return $cursor;
+    var_dump($cursor);
 }
+ 
+
 ?>

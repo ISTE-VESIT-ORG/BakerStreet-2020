@@ -1,8 +1,8 @@
 <!--Event Expired-->
 <?php
-    include '../Components/closed.php';
-    include '../Components/footer.php';
-    return ;
+    // include '../Components/closed.php';
+    // include '../Components/footer.php';
+    // return ;
 
 ?>
 

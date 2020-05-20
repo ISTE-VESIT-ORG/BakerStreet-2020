@@ -1,8 +1,8 @@
 <!--Event Expired-->
 <?php
-    include '../Components/closed.php';
-    include '../Components/footer.php';
-    return ;
+    // include '../Components/closed.php';
+    // include '../Components/footer.php';
+    // return ;
 
 ?>
 
@@ -34,8 +34,8 @@
 <body style="background-image: url('../Images/Leaderboard.jpg'); ">
     
     <!--Header-->
-    <?php //include '../Components/header.php'; ?>
-<!-- 
+    <?php include '../Components/header.php'; ?>
+
     <div class="container">
         <div class="justify-content-center h-100 mt-5" >
             <div class="card text-white" style="background-color: rgba(0,0,0,0.75); height: 530px;overflow-y:scroll;">
@@ -54,39 +54,39 @@
                         <th scope="col">Time</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody> -->
                         <?php
-                            require '../Components/error.php';
-                            // require '../Database/Database.php';
+                            //require '../Components/error.php';
+                            require '../Database/Database.php';
 
-                            // $cursor = sortLeaderboard();
-                            // $i=0;
+                            $cursor = sortLeaderboard();
+                            $i=0;
                             
-                            // foreach ($cursor as $state) {
-                            //     $time_taken = $state['time_end'] - $state['time_start'];
-                            //     $i++;
+                            foreach ($cursor as $state) {
+                                $time_taken = $state['time_end'] - $state['time_start'];
+                                $i++;
 
-                            //     if($time_taken <= 0){
-                            //         print"<tr>
-                            //             <th scope=\"row\">$i</th>
-                            //             <td>".$state['email']."</td>
-                            //             <td>".$state['points']."</td>
-                            //             <td>".$state['progress_count']."</td>
-                            //             <td> NA  </td>
-                            //         </tr>";
-                            //     }else{
-                            //         $time =  getHoursMinutes($time_taken);
+                                if($time_taken <= 0){
+                                    print"<tr>
+                                        <th scope=\"row\">$i</th>
+                                        <td>".$state['email']."</td>
+                                        <td>".$state['points']."</td>
+                                        <td>".$state['progress_count']."</td>
+                                        <td> NA  </td>
+                                    </tr>";
+                                }else{
+                                    $time =  getHoursMinutes($time_taken);
         
-                            //         print"<tr>
-                            //                 <th scope=\"row\">$i</th>
-                            //                 <td>".$state['email']."</td>
-                            //                 <td>".$state['points']."</td>
-                            //                 <td>".$state['progress_count']."</td>
-                            //                 <td>".$time."</td>
-                            //             </tr>";
-                            //     }
+                                    print"<tr>
+                                            <th scope=\"row\">$i</th>
+                                            <td>".$state['email']."</td>
+                                            <td>".$state['points']."</td>
+                                            <td>".$state['progress_count']."</td>
+                                            <td>".$time."</td>
+                                        </tr>";
+                                }
 
-                            // }
+                            }
                         
                         ?>
                     </tbody>
