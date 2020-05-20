@@ -131,7 +131,7 @@
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Yes they are my friends in London.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src=" ../Images/O.png " alt=""class="try" ><h2>Olivia</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Yes they are my friends in London.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src=" ../Images/o1.png " alt=""class="try" ><h2>Olivia</h2></div>';
                 break;
                 case 3:
                 box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">We headed back to London to provide her friends security.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
