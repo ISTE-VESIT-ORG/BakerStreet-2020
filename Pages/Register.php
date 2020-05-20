@@ -105,6 +105,7 @@ session_start();
                     <option value="D6B">D6B</option>
                     <option value="D7A">D7A</option>
                     <option value="D7B">D7B</option>
+                    <option value="D7C">D7C</option>
                     <option value="D8">D8</option>
                     <option value="D9A">D9A</option>
                     <option value="D9B">D9B</option>
