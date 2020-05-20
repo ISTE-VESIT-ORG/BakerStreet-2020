@@ -1,3 +1,11 @@
+<!--Event Expired-->
+<?php
+    include '../Components/closed.php';
+    include '../Components/footer.php';
+    return ;
+
+?>
+
 <?php
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
     

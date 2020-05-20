@@ -1,3 +1,11 @@
+<!--Event Expired-->
+<?php
+    include '../Components/closed.php';
+    include '../Components/footer.php';
+    return ;
+
+?>
+
 <?php
     require_once '../Database/connStatus.php';
 
