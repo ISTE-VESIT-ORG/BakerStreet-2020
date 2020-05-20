@@ -64,7 +64,7 @@ session_start();
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                   </div>
-                  <input type="email" pattern="[[2019 2018.]+[a-zA-Z].+[a-zA-Z]+@[ves]+.[ac].+[in]$" required autocomplete="off" name="email" class="form-control" placeholder="VES Email ID">
+                  <input type="email" pattern="" required autocomplete="off" name="email" class="form-control" placeholder="VES Email ID">
                 </div>
                 <!--OTP-->
                 <div class="input-group form-group">
