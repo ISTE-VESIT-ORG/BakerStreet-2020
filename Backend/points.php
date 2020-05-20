@@ -18,7 +18,7 @@
     // Hint => -(10 + (hints_used)*2) : done
 
     function doubleAnswerCheck($inputs,$correct_answer){
-            
+
             $inputs = preg_split('/[\s]+/',$inputs);
             print_r($inputs);
             echo "<br>";
@@ -84,13 +84,18 @@
 
     if(isset($_POST['answer'])){
 
+        if($_SESSION['progress_count'] == 11){
+            header('location: timer.php'); 
+            return ;
+        }
+
         //Collecting Strings
         $correct_answer = trim(strtoupper($data[$question_no]['answer']));
         $input = trim(strtoupper($_POST['answer']));
 
         if($data[$question_no]['_id'] == 7){
             doubleAnswerCheck($input,$correct_answer); 
-            return ;
+            
         }
 
         //Regex Match
