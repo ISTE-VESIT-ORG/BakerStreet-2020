@@ -31,7 +31,7 @@
     },
     {
         "_id" : "6",
-        "question" : "Two archaeologists standing on the Greenwich meridian wanted to meet their undercover friend for help. They wanted to meet him but he couldn\u2019t share his address directly. So he made a puzzle for them to solve which would lead to the country he is in.\r\n\r\nHe sent both of them to a warehouse where they found the address to two different warehouses. One was towards the north and hthe other was towards the east.\r\nBoth of them decided to split and go to those warehouses.<br>\r\nOne who went to the north found a letter with a mathematical question in it\r\n\r\nQuestion:\r\n\r\nThe triangle ABC  has sides a=5, b=18.76, and c=15.398 find angle C.<br>\r\n\r\nOther who went to the east found the same question but had to find the angle A <br>\r\n\r\nAfter solving the problem, both of them met and thought about the clues that were given and were successful to find the country hidden in it.\r\n\r\n<br>Find the country and meet Olivia\r\n-With love S.H.\r\n",
+        "question" : "Two archaeologists standing on the Greenwich meridian wanted to meet their undercover friend for help. They wanted to meet him but he couldn\u2019t share his address directly. So he made a puzzle for them to solve which would lead to the country he is in.\r\n\r\nHe sent both of them to a warehouse where they found the address to two different warehouses. One was towards the north and the other was towards the east.\r\nBoth of them decided to split and go to those warehouses.<br>\r\nOne who went to the north found a letter with a mathematical question in it\r\n\r\nQuestion:\r\n\r\nThe triangle ABC  has sides a=5, b=18.76, and c=15.398 find angle C.<br>\r\n\r\nOther who went to the east found the same question but had to find the angle A <br>\r\n\r\nAfter solving the problem, both of them met and thought about the clues that were given and were successful to find the country hidden in it.\r\n\r\n<br>Find the country and meet Olivia\r\n-With love S.H.\r\n",
         "answer" : "Italy",
         "hint" : "Not only the degrees of the angle but also the direction is required to find the location."
     },
@@ -63,6 +63,6 @@
         "_id" : "11",
         "question" : "\u201CHello Shelly boy! Welcome to the final round. \r\nI have to admit, I feel like this has gone on for too long now and you definitely deserve a rest.<br> But I can\u2019t help but imagine you twitching so hard to get your hands on me given all the pain I have caused you. Hah! I LOVE IT! Don\u2019t worry, Sherlock, even I am excited to meet you after all this, the look on your face will be worth more than gold!<br> Trust me, it will happen and it will be priceless!\r\nBut for that you have to pull through one LAST round. Be my good boy and finish it! \r\n\r\nThere\u2019s a donkey murdered with a note on its tail. \r\nNote said \u201CYou would need an eight legged table to solve that.\r\n<br>Take this number you may need it, 150 165 142 145 162 164.\u201D\r\n<br>The only way to get to the murderer is to solve the mystery note.\u201D\r\n",
         "answer" : "hubert",
-        "hint" : "The number 103157144145 is CODE"
+        "hint" : "Donkey is  with the key"
     }
 ]
