@@ -4,22 +4,22 @@
     require_once '../Backend/auth.php';
     require_once '../Backend/authLogin.php';
 
-    //     if(!isset($_SESSION['email'])){
-    //         include '../Components/error.php';
+        if(!isset($_SESSION['email'])){
+            include '../Components/error.php';
 
-    //         return ;
-    //     }
+            return ;
+        }
 
-    //     //fetch user_info
-    //     ob_start();
-    //     $user_info = fetchUser($_SESSION['email']);
-    //     ob_end_clean();
+        //fetch user_info
+        ob_start();
+        $user_info = fetchUser($_SESSION['email']);
+        ob_end_clean();
 
-    //     if( (int)$user_info['progress_count'] != 11){
-    //         include '../Components/incomplete.php';
+        if( (int)$user_info['progress_count'] != 11){
+            include '../Components/incomplete.php';
 
-    //         return ;
-    //     }
+            return ;
+        }
 
         function getHoursMinutes2($seconds, $format = '%02d:%02d:%02d') {
 
