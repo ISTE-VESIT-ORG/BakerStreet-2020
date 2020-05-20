@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>221B Baker Street-Conversation8</title>
@@ -61,6 +60,31 @@
             margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
         }
+        .rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:150px;
+        }
+.try{
+ height:80%;
+ width:80%;
+}
+@media screen and (max-width: 780px) {
+.rectangle-left{
+    font-size:15px;
+
+}
+.rectangle-right{
+    font-size:15px;
+}
+.rectangle-center{
+    font-size:15px;
+}
+.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:55px;
+        }
+        .try{
+             height:60%;
+             width:80%;
+        }
     </style>
 </head>
 <body>
@@ -104,25 +128,25 @@
         }
         function render(i){
             switch(i) {
-            case 1:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">- Okay Olivia everything’s fine. You are safe now.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                case 1:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Okay Olivia everything’s fine. You are safe now.</div><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Thank you so much. I was so scared that I couldnt think of anything.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/Olivia.png" alt="" width="80%" height="80%"><h2>Olivia</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> Thank you so much. I was so scared that I couldn’t think of anything.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/O.png" alt="" width="80%" height="80%"><h2>Olivia</h2></div>';
                 break;
                 case 3:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Can you describe your kidnapper?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+               box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Can you describe your kidnapper?</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button</div>';
                 break;
                 case 4:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  I don’t know. He wore a mask. The last thing I remember is I was in my house sleeping and heard someone break in. I could hear my dad screaming. I woke up and felt a hard hit on my head just before I lost consciousness.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/Olivia.png" alt="" width="80%" height="80%"><h2>Olivia</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  I don’t know. He wore a mask. The last thing I remember is I was in my house sleeping and heard someone break in. I could hear my dad screaming. I woke up and felt a hard hit on my head just before I lost consciousness. I don’t know. He wore a mask. The last thing I remember is I was in my house sleeping and heard someone break in. I could hear my dad screaming. I woke up and felt a hard hit on my head just before I lost consciousness.</div><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/O.png" alt="" class="try"><h2>Olivia</h2></div>';
                 break;
                 case 5:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  Okay Olivia, no problem. Just calm down we will take you back safely.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  Okay Olivia, no problem. Just calm down we will take you back safely.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button</div>';
                 break;
                 case 6:
-                box.innerHTML = '<div class="col-8 mb-5"><div class="rectangle-right">We opened the note that we found in Olivia’s hand.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a> </div><div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div>';
-                break;
+            box.innerHTML = '<div class="col-8"><div class="rectangle-right">We opened the note that we found in Olivia’s hand. </div><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a> </div><div class="col-4"><img src="../Images/sherlock.png" alt=""class="try"><h2>Sherlock</h2></div>';
+           
            
            
             }          
@@ -130,8 +154,6 @@
       </script>
 
 
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
  <?php include '../Components/footer.php';?>
 
 </body>

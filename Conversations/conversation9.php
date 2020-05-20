@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
    <title>221B Baker Street-Conversation10</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,6 +60,31 @@
             margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
         }
+        .rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:150px;
+        }
+.try{
+ height:80%;
+ width:80%;
+}
+@media screen and (max-width: 780px) {
+.rectangle-left{
+    font-size:15px;
+
+}
+.rectangle-right{
+    font-size:15px;
+}
+.rectangle-center{
+    font-size:15px;
+}
+.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:55px;
+        }
+        .try{
+             height:60%;
+             width:80%;
+        }
     </style>
 </head>
 <body>
@@ -107,41 +131,40 @@
             switch(i) {
             
            
-             case 1:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">So Erin,why did you kill Scarlett?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/Lestrade.png" alt="" width="80%" height="80%"><h2>Lestrade</h2></div>';
+                case 1:
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">So Erin,why did you kill Scarlett?</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/Lestrade.png" alt="" class="try"><h2>Lestrade</h2></div>';
                 break;
                 case 2:
-                box.innerHTML = '<div class="col-4"><img src="" alt="" width="80%" height="80%"><h2>Erin</h2></div><div class="col-8"><div class="rectangle-left mb-5">  Scarlett and I were head over heels over the same guy. I really wanted Scarlett to step back, but she wouldn’t. What was absurd was that over the next  few days I kept receiving calls from a man who knew about my jealousy and kept suggesting ways to get rid of Scarlett; always insisting on poison. I tried to get his identity by flirting with him over the telly but he wouldn’t budge and even threatened me with my life.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+              box.innerHTML = '<div class="col-4"><img src="../images/erin.png" alt="" class="try"><h2>Erin</h2></div><div class="col-8"><div class="rectangle-left">Scarlett and I were head over heels over the same guy. I really wanted Scarlett to step back, but she wouldn’t. What was absurd was that over the next few days, I kept receiving calls from a man who knew about my jealousy and kept suggesting ways to get rid of Scarlett, always insisting on poison. I tried to get his identity by flirting with him over the telly but he wouldn’t budge and even threatened me with my life.</div><br><BR><BR><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 3:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  Did you arrange a meeting with him?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/Lestrade.png" alt=""width="80%" height="80%" ><h2>Lestrade</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  Did you arrange a meeting with him?</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/Lestrade.png" alt=""class="try" ><h2>Lestrade</h2></div>';
                 break;
                 case 4:
-                box.innerHTML = '<div class="col-4"><img src="https://i.pinimg.com/236x/77/03/8a/77038a8120d63dfb1d5dd92ac2bc9041.jpg" alt="" width="80%" height="80%"><h2>Erin</h2></div><div class="col-8"><div class="rectangle-left">  No, I was scared. But I have to admit, heartbroken that I was, it was very tempting to just give in to his advice back then.Erin was handed over for further investigation.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../images/erin.png" alt="" class="try"><h2>Erin</h2></div><div class="col-8"><div class="rectangle-left">No, I was scared. But I have to admit, heartbroken that I was, it was very tempting to just give in to his advice back then.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
-                case 5:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We assumed that Scarlett might have some leads about the real mastermind, who is pretending to be S.H. So where does this take us boss?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" ><h2>John</h2></div>';
+                 case 5:
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Erin was handed over for further investigation.</div><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
                 break;
                 case 6:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  I am not so sure Watson. But what I know for sure is that I am running low on cash. Haha! Let’s make a quick run to the bank, shall we? </div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">We assumed that Scarlett might have some leads about the real mastermind, who is pretending to be S.H. So where does this take us boss?</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt=""class="try" ><h2>John</h2></div>';
                 break;
-                 case 7:
-              box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">At the bank, they were surprised to bump into most of the very people who had attended Sherlock’s wedding. </div><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
+                case 7:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> I am not so sure Watson. But what I know for sure is that I am running low on cash. Haha! Let’s make a quick run to the bank, shall we?</div> <button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                break;
+                 case 8:
+              box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">At the bank, they were surprised to bump into most of the very people who had attended Sherlock’s wedding. </div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
                 break;
                 break;
-           case 8:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png"" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">   Keep your guard up, Watson. This is a set up. Here the time arrived</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
-                break;
+           
             case 9:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">Here the time arrived</div><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a> </div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png"" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">   Keep your guard up, Watson. This is a set up. Here the time arrived</div><br><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a> </div><div class="col-1"></div>'
                 break;
             }          
         }
       </script>
 
 
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
  <?php include '../Components/footer.php';?>
 
 </body>

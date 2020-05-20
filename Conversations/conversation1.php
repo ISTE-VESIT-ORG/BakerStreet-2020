@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>221B Baker Street-Conversation2</title>
@@ -61,6 +60,32 @@
             margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
         }
+        .rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:150px;
+        .try{
+ height:80%;
+ width:80%;
+}
+@media screen and (max-width: 780px) {
+.rectangle-left{
+    font-size:15px;
+
+}
+.rectangle-right{
+    font-size:15px;
+}
+.rectangle-center{
+    font-size:15px;
+}
+.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:55px;
+        }
+        .try{
+             height:60%;
+             width:80%;
+            }
+}
+
     </style>
 </head>
 <body>
@@ -118,8 +143,6 @@
       </script>
 
 
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
  <?php include '../Components/footer.php';?>
 
 </body>

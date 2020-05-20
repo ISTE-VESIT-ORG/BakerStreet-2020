@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
    <title>221B Baker Street-Conversation1</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,6 +60,29 @@
             margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
         }
+        .try{
+ height:80%;
+ width:90%;
+}
+@media screen and (max-width: 780px) {
+.rectangle-left{
+    font-size:15px;
+
+}
+.rectangle-right{
+    font-size:15px;
+}
+.rectangle-center{
+    font-size:15px;
+}
+.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:55px;
+        }
+        .try{
+             height:80%;
+             width:90%;
+            }
+}
     </style>
 </head>
 <body>
@@ -103,17 +125,14 @@
         }
         function render(i){
             switch(i) {
-            case 1:
-                box.innerHTML = '<div class="row"><div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">-At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On  reaching the crime scene,the watchman told us, </div><br><br><br><br><br><br><br><br><br><div class="float-right" style="margin-left:40%"><a href="../Pages/Questions2.php" type="button" class="btn btn-dark">Move to the Scene</a></div></div></div>';
+                case 1:
+                box.innerHTML = '<div class="row"><div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="90%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">At 8 am, we received news that an old woman was murdered in one of the rooms of our venue. On reaching the crime scene, the watchman told us. </div><br><br><br><br><br><br><br><br><br><div class="float-right" style="margin-left:40%"><a href="../Pages/Questions2.php" type="button" class="btn btn-dark">Move to the Scene</a></div></div></div>';
                 break;
            
             }          
         }
       </script>
 
-
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
  <?php include '../Components/footer.php';?>
 
 </body>

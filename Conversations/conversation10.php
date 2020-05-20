@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
   <title>221B Baker Street-Conversation11</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,6 +60,32 @@
             margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
         }
+        .rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:150px;
+        }
+.try{
+ height:80%;
+ width:80%;
+}
+@media screen and (max-width: 780px) {
+.rectangle-left{
+    font-size:15px;
+
+}
+.rectangle-right{
+    font-size:15px;
+}
+.rectangle-center{
+    font-size:15px;
+}
+.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:55px;
+        }
+        .try{
+             height:60%;
+             width:80%;
+            }
+}
     </style>
 </head>
 <body>
@@ -103,26 +128,25 @@
         }
         function render(i){
             switch(i) {
-            case 1:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">The chances that this was a coincidence are next to nothing. But we can’t know for sure. What do you think was the motive for Harrison to do it, Watson?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                case 1:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">The chances that this was a coincidence are next to nothing. But we can’t know for sure. What do you think was the motive for Harrison to do it, Watson?</div><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
             case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  I am just as bumped as you are, Sherlock.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">  I am just as bumped as you are, Sherlock.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/sherlock.png" alt=""class="try"><h2>John</h2></div>';
                 break;
              case 3:
                 box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">When interrogated he gave us a phone with a recorded audio</div><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary" onclick="change();">Next</button></div><div class="col-1"></div>'
                 break;
                 case 4:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">“Hello Shelly boy! Welcome to the final round. I have to admit, I feel like this has gone on for too long now and you definitely deserve a rest. But I can’t help but imagine you twitching so hard to get your hands on me given all the pain I have caused you. Hah! I LOVE IT! Don’t worry, Sherlock, even I am excited to meet you after all this, the look on your face will be worth more than gold! Trust me, it will happen and it will be priceless!But for that you have to pull through one LAST round. Be my good boy and finish it!”</div><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">“Hello Shelly boy! Welcome to the final round.<br> I have to admit, I feel like this has gone on for too long now and you definitely deserve a rest. But I can’t help but imagine you twitching so hard to get your hands on me given all the pain I have caused you. Hah! I LOVE IT! Don’t worry, Sherlock, even I am excited to meet you after all this, the look on your face will be worth more than gold! Trust me, it will happen and it will be priceless!<br>But for that you have to pull through one LAST round. Be my good boy and finish it!” </div><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a></div><div class="col-1"></div>'
                 break;
+           
            
             }          
         }
       </script>
 
 
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
  <?php include '../Components/footer.php';?>
 
 </body>

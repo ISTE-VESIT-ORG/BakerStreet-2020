@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
   <title>221B Baker Street-Conversation5</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,6 +60,32 @@
             margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
         }
+        .rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:150px;
+        }
+.try{
+ height:80%;
+ width:80%;
+}
+@media screen and (max-width: 780px) {
+.rectangle-left{
+    font-size:15px;
+
+}
+.rectangle-right{
+    font-size:15px;
+}
+.rectangle-center{
+    font-size:15px;
+}
+.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:55px;
+        }
+        .try{
+             height:60%;
+             width:80%;
+            }
+}
     </style>
 </head>
 <body>
@@ -105,56 +130,35 @@
         }
         function render(i){
             switch(i) {
-            case 1:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">So Andrea killed him.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                case 1:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">We revisited Andrea’s house to bring people into custody starting with Carl. But as soon as we reached her house we found Carl’s dead body.<br.Okay, now we can inspect the house without a warrant.</div><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
-            case 2:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">How do you know that?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" ><h2>John</h2></div>';
+                case 2:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Okay, now we can inspect the house without a warrant.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                break;case 3:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Start looking for evidence in the house.</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
-            case 3:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Because in winter fog comes on the inside. That’s what happened to my glasses when we were leaving our venue.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
-                break;
-                case 4:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Oh that’s incredible.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" ><h2>John</h2></div>';
-                break;
+            case 4:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">We revisited Andrea’s house to bring people into custody starting with Carl. But as soon as we reached her house we found Carl’s dead body.</div><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 case 5:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  I wonder what goes on in your funny little heads.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">He has mentioned Andrea’s extra marital affair with Jorge Manley. He also has stated ,”I thought a couple of times to end Jorge Manley and Andrea but I decided to wait and see how long this goes because Jorge Manley had another affair.”</div><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" class="try"><h2>John</h2></div>';
                 break;
-                case 6:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right"> We revisited Andrea’s house to bring people into custody starting with Carl. But as soon as we reached her house we found Carl’s dead body.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div>';
+            case 6:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  Maybe Andrea came to know about this and felt betrayed. Therefore, killed Jorge Manley and felt that he had to no reason to live so Andrea decided to commit suicide and frame Carl for all the torture</div><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
                 case 7:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> Okay, now we can inspect the house without a warrant.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left"> By the way, where is Olivia?</div><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
+                
+               
                 case 8:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Start looking for evidence in the house</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" ><h2>John</h2></div>';
+                box.innerHTML = '<div class="col-8"><div class="rectangle-right">(Screaming)Sherlockkk! You need to look at this. </div><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a> </div><div class="col-4"><img src="../Images/Lestrade.png" alt=""class="try"><h2>Lestrade</h2></div>';
                 break;
-                case 9:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">  Look I found Carls personal diary!</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
-                break;
-                case 10:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">He has mentioned Andreas extra marital affair with Jorge Manley. He also has stated ,”I thought a couple of times to end Jorge Manley and Andrea but I decided to wait and see how long this goes because Jorge Manley had another affair.”</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/john.png" alt="" ><h2>John</h2></div>';
-                break;
-                case 11:
-                box.innerHTML = '<div class="col-4"><img src="../Images/john.png" alt="" ><h2>Jhn </h2></div><div class="col-8"><div class="rectangle-left">  Maybe Andrea came to know about this and felt betrayed. Ergo, killed Jorge Manley and felt that he had to no reason to live so Andrea decided to commit suicide and frame Carl for all the torture.  </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
-                break;
-                case 12:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">Maybe Andrea came to know about this and felt betrayed. Ergo, killed Jorge Manley and felt that he had to no reason to live so Andrea decided to commit suicide and frame Carl for all the torture.  </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div><div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div>';
-                break;
-                case 13:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt=""width="80%" height="80%" ><h2>Sherlockh2></div><div class="col-8"><div class="rectangle-left">  -By the way, Where is Olivia?</div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button> <button class="btn btn-primary button" onclick="change();">Next</button></div>';
-                break;
-                case 14:
-                box.innerHTML = '<div class="col-8"><div class="rectangle-right">(Screaming)Sherlockkk! You need to look at this.  </div><br><br><br><br><br><br><br><br><br><button class="btn btn-info button" onclick="back();">Back</button><a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a> </div><div class="col-4"><img src="../Images/Lestrade.png" alt=""width="80%" height="80%" ><h2>Lestrade</h2></div>';
-                break;
-           
             }          
         }
       </script>
 
 
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
  <?php include '../Components/footer.php';?>
 
 </body>

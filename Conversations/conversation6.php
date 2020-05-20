@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/style1.css">
  <title>221B Baker Street-Conversation7</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +59,30 @@
         #card{
             margin-bottom:100px;
             background-color: rgba(0,0,0,0.75)
+        }.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:150px;
         }
+.try{
+ height:80%;
+ width:80%;
+}
+@media screen and (max-width: 780px) {
+.rectangle-left{
+    font-size:15px;
+
+}
+.rectangle-right{
+    font-size:15px;
+}
+.rectangle-center{
+    font-size:15px;
+}
+.rectangle-left,.rectangle-right,.rectangle-center{
+            margin-bottom:55px;
+        }
+        .try{
+             height:60%;
+             width:80%;}
     </style>
 </head>
 <body>
@@ -103,21 +125,18 @@
         }
         function render(i){
             switch(i) {
-            case 1:
-                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" width="80%" height="80%"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Italy! We were really amazed to see the power of the kidnapper to take Olivia overseas.</div><br><br><br><br><br><br><br><br><br><button class="btn btn-primary button" onclick="change();">Next</button></div>';
+                case 1:
+                box.innerHTML = '<div class="col-4"><img src="../Images/sherlock.png" alt="" class="try"><h2>Sherlock</h2></div><div class="col-8"><div class="rectangle-left">Italy! We were really amazed to see the power of the kidnapper to take Olivia overseas.</div><button class="btn btn-primary button" onclick="change();">Next</button></div>';
                 break;
            
              case 2:
-                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">We assumed a great network involved. The only way to get Olivia was to visit Italy.After we went to Italy, while exiting from the airport, an officer said, “Welcome to Italy, Sherlock and John”, and gave us this letter:</div><br><button class="btn btn-info button" onclick="back();">Back</button> <a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a></div><div class="col-1"></div>'
+                box.innerHTML = '<div class="col-1"></div><div class="col-10"><div class="rectangle-center">We assumed a great network involved. The only way to get Olivia was to visit Italy. br>After we went to Italy, while exiting from the airport, an officer said, “Welcome to Italy, Sherlock and John”, and gave us this letter:</div><br><button class="btn btn-info button" onclick="back();">Back</button> <a href="../Pages/Questions2.php" type="button" class="btn btn-dark ml-2">Move to next Scene</a></div><div class="col-1"></div>'
                 break;
            
             }          
         }
       </script>
 
-
-<script type="text/javascript"src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
  <?php include '../Components/footer.php';?>
 
 </body>
