@@ -33,9 +33,9 @@
                         </li>";
               }
           ?>
-      <li class="nav-item mx-2">
+      <!-- <li class="nav-item mx-2">
         <a class="nav-link" href="../Pages/Leaderboard.php">Leaderboard</a>
-      </li>
+      </li> -->
       <?php
               error_reporting(E_ERROR | E_WARNING | E_PARSE);
               session_start();
