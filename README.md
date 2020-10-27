@@ -15,7 +15,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <p align="center">
-  <img width="640" height="331" src="https://i.ibb.co/h7cgkdF/riddlezz-1.png">
+  <img src="https://github.com/ADI-KOTKAR/Riddlezz/blob/master/Images/bakerstreet.PNG">
 </p>
 
 
