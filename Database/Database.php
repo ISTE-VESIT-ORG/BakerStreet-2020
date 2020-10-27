@@ -27,7 +27,7 @@ require '../vendor/autoload.php';
 //Database Connection
 function connectDB(){
     $client = new MongoDB\Client(
-        'mongodb+srv://ADI-KOTKAR:<password>@cluster0-vicgr.mongodb.net/test?retryWrites=true&w=majority');
+        '<mongodb key here>');
     $db = $client->ISTE_Quiz;
     $collection = $db->user_info;
     
