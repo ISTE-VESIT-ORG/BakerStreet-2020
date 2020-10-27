@@ -160,7 +160,7 @@ extension=php_mongodb.dll
 <!-- CONTACT -->
 ## Contact
 
-* Contact Developer - [Mail](developer.adi.kotkar@gmail.com) - developer.adi.kotkar@gmail.com
+* Contact Developer - [Mail](adityakotkar75@gmail.com) - adityakotkar75@gmail.com
 * Reference Project Link: [https://github.com/ADI-KOTKAR/Riddlezz.git](https://github.com/ADI-KOTKAR/Riddlezz.git)
 * Reference of Hosted site : [Riddlez](https://bit.ly/ADI-KOTKAR_Riddlez)
 
