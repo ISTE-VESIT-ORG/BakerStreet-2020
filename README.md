@@ -26,7 +26,6 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Contributors](#contributors)
 * [Contact](#contact)
 
 
@@ -153,9 +152,6 @@ extension=php_mongodb.dll
     * We are basically hosting our github repo on Heroku with automated deployment ie. whenever I commit changes    in my repo, it will automatically affect changes on my website. 
     * Refer: https://youtu.be/zavb4WG8x-8
 10. You are ready to go!!!
-
-## Contributors
-[Aditya Kotkar](https://github.com/ADI-KOTKAR), [Shreyas Khadapkar](https://github.com/shreyaskhadapkar)
 
 <!-- CONTACT -->
 ## Contact
