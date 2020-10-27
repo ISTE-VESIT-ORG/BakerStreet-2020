@@ -4,7 +4,7 @@
   <a href="https://github.com/othneildrew/Best-README-Template">
   </a>
 
-  <h2 align="center">221B BakerStreet</h2>
+  <h2 align="center">221B Baker Street</h2>
 
   <p align="center">
     Website using PHP with MongoDB Database and deployment on Heroku</a>
@@ -33,7 +33,7 @@
 ## About The Project
 
 
-There are many great PHP websites available on GitHub, however, there are very few which explore new, fast and latest cloud databases like MongoDB Atlas. This is a quiz based website which is a result of event organised by ISTE-VESIT's quarantine event - 221B BakerStreet, where we tried our best to try something different and use all basic functionalities of PHP.
+There are many great PHP websites available on GitHub, however, there are very few which explore new, fast and latest cloud databases like MongoDB Atlas. This is a quiz based website which is a result of event organised by ISTE-VESIT's quarantine event - 221B Baker Street, where we tried our best to try something different and use all basic functionalities of PHP.
 
 What's Different?
 * Use of NoSQL database instead of traditional MySQL database.
