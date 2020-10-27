@@ -33,7 +33,7 @@
 ## About The Project
 
 
-There are many great PHP websites available on GitHub, however, there are very few which explore new, fast and latest cloud databases like MongoDB Atlas. This is a quiz based website which is a result of event organised by ISTE-VESIT's quarantine event - 221B Baker Street, where we tried our best to try something different and use all basic functionalities of PHP.
+There are many great PHP website repos available on GitHub, however there are very few which explore new, fast and latest cloud databases like MongoDB Atlas. This is a quiz based website which is a result of event organised by ISTE-VESIT's quarantine event - 221B Baker Street, where we tried our best to try something different and use all basic functionalities of PHP.
 
 What's Different?
 * Use of NoSQL database instead of traditional MySQL database.
@@ -41,11 +41,9 @@ What's Different?
 * Use of MongoDB Atlas which handle large unstructured data in the form of JSON.
 * Use of Heroku platform for hosting PHP Website instead of traditional cpanel hosting platforms.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
 ### Built With
 
-I am listing the main things which are needed for this project:
+List of important links:
 
 * [PHP](https://www.php.net/)
 * [MongoDB with PHP](https://docs.mongodb.com/drivers/php)
@@ -57,7 +55,7 @@ I am listing the main things which are needed for this project:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-First of all you will need a database of your own which should be created in MongoDB Atlas , I created out cloud-database so that handling of data can be done in JSON format and high secuirity of database.
+First of all you will need a database of your own which should be created in MongoDB Atlas, we created cloud-database so that handling of data can be done in JSON format and for higher secuirity.
 
 Create a free cluster in MongoDB Atlas with your account, configure all stuff like network access, database access, and create a database with collection by following structure:
 
