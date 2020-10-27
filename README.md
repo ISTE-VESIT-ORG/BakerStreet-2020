@@ -155,7 +155,7 @@ extension=php_mongodb.dll
 10. You are ready to go!!!
 
 ## Contributors
-[Aditya Kotkar](https://github.com/ADI-KOTKAR)
+[Aditya Kotkar](https://github.com/ADI-KOTKAR), [Shreyas Khadapkar](https://github.com/shreyaskhadapkar)
 
 <!-- CONTACT -->
 ## Contact
